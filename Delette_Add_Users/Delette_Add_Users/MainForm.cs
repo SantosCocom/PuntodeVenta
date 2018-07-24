@@ -94,7 +94,7 @@ namespace Delette_Add_Users
 			{
 				string clave = dgvEmpleados[0,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
 				oEmpleados.EliminarEmpleado(clave);
-				oEmpleados.BuscarEmpleado(txtBuscar.Text,dgvEmpleados);//Actualiza el datagrid 
+				oEmpleados.BuscarEmpleado(txtBuscar.Text,dgvEmpleados);//Actualiza el datagridview de los empleados 
 				
 			}
 		}

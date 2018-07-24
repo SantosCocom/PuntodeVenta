@@ -1,8 +1,9 @@
 C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\bin\Debug\NovedadesLirio.exe.config
 C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\bin\Debug\NovedadesLirio.exe
 C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\bin\Debug\NovedadesLirio.pdb
-C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.csprojResolveAssemblyReference.cache
 C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.MainForm.resources
 C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.csproj.GenerateResource.Cache
 C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.exe
 C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.pdb
+C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.Properties.Resources.resources
+C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.csprojResolveAssemblyReference.cache

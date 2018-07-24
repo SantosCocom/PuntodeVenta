@@ -27,6 +27,9 @@ namespace NovedadesLirio
 		private System.Windows.Forms.Button btnAgregar;
 		private System.Windows.Forms.DataGridViewTextBoxColumn producto;
 		private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Clave;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Total;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -57,11 +60,14 @@ namespace NovedadesLirio
 			this.lvlResultado = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.dgvProductos = new System.Windows.Forms.DataGridView();
-			this.producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.btnAgregar = new System.Windows.Forms.Button();
+			this.Clave = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
 			this.SuspendLayout();
@@ -101,9 +107,9 @@ namespace NovedadesLirio
 			this.groupBox1.Controls.Add(this.lvlResultado);
 			this.groupBox1.Controls.Add(this.label3);
 			this.groupBox1.Controls.Add(this.dgvProductos);
-			this.groupBox1.Location = new System.Drawing.Point(291, 51);
+			this.groupBox1.Location = new System.Drawing.Point(22, 73);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(460, 209);
+			this.groupBox1.Size = new System.Drawing.Size(681, 209);
 			this.groupBox1.TabIndex = 5;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Carrito";
@@ -125,30 +131,25 @@ namespace NovedadesLirio
 			// 
 			// dgvProductos
 			// 
-			this.dgvProductos.AllowUserToOrderColumns = true;
+			this.dgvProductos.AllowUserToAddRows = false;
+			this.dgvProductos.AllowUserToDeleteRows = false;
 			this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+			this.Clave,
+			this.nombre,
 			this.producto,
-			this.nombre});
-			this.dgvProductos.Location = new System.Drawing.Point(6, 19);
+			this.Cantidad,
+			this.Total});
+			this.dgvProductos.Location = new System.Drawing.Point(12, 19);
 			this.dgvProductos.Name = "dgvProductos";
-			this.dgvProductos.Size = new System.Drawing.Size(448, 159);
+			this.dgvProductos.ReadOnly = true;
+			this.dgvProductos.Size = new System.Drawing.Size(616, 159);
 			this.dgvProductos.TabIndex = 0;
-			// 
-			// producto
-			// 
-			this.producto.HeaderText = "Precio";
-			this.producto.Name = "producto";
-			// 
-			// nombre
-			// 
-			this.nombre.HeaderText = "Nombre";
-			this.nombre.Name = "nombre";
-			this.nombre.ReadOnly = true;
+			this.dgvProductos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DgvProductosKeyDown);
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(393, 266);
+			this.button1.Location = new System.Drawing.Point(393, 288);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(104, 23);
 			this.button1.TabIndex = 6;
@@ -157,7 +158,7 @@ namespace NovedadesLirio
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(22, 266);
+			this.button2.Location = new System.Drawing.Point(22, 288);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(75, 23);
 			this.button2.TabIndex = 7;
@@ -166,13 +167,43 @@ namespace NovedadesLirio
 			// 
 			// btnAgregar
 			// 
-			this.btnAgregar.Location = new System.Drawing.Point(248, 266);
+			this.btnAgregar.Location = new System.Drawing.Point(248, 288);
 			this.btnAgregar.Name = "btnAgregar";
 			this.btnAgregar.Size = new System.Drawing.Size(105, 23);
 			this.btnAgregar.TabIndex = 8;
 			this.btnAgregar.Text = "Agregar a carrito";
 			this.btnAgregar.UseVisualStyleBackColor = true;
 			this.btnAgregar.Click += new System.EventHandler(this.BtnAgregarClick);
+			// 
+			// Clave
+			// 
+			this.Clave.HeaderText = "Clave";
+			this.Clave.Name = "Clave";
+			this.Clave.ReadOnly = true;
+			// 
+			// nombre
+			// 
+			this.nombre.HeaderText = "Nombre";
+			this.nombre.Name = "nombre";
+			this.nombre.ReadOnly = true;
+			// 
+			// producto
+			// 
+			this.producto.HeaderText = "Precio";
+			this.producto.Name = "producto";
+			this.producto.ReadOnly = true;
+			// 
+			// Cantidad
+			// 
+			this.Cantidad.HeaderText = "Cantidad";
+			this.Cantidad.Name = "Cantidad";
+			this.Cantidad.ReadOnly = true;
+			// 
+			// Total
+			// 
+			this.Total.HeaderText = "Total";
+			this.Total.Name = "Total";
+			this.Total.ReadOnly = true;
 			// 
 			// MainForm
 			// 

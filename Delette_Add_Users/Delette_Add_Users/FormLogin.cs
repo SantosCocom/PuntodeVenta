@@ -9,6 +9,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using AccesoADatos;
 
 namespace Delette_Add_Users
 {
@@ -28,5 +29,67 @@ namespace Delette_Add_Users
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		void TxtUsuarioEnter(object sender, EventArgs e)
+		{
+			if (txtUsuario.Text=="Usuario") 
+			{
+				txtUsuario.Text="";
+				txtUsuario.ForeColor=Color.LightGray;
+			}
+		}
+		void TxtUsuarioLeave(object sender, EventArgs e)
+		{
+			if (txtUsuario.Text=="")
+			{
+				txtUsuario.Text="Usuario";
+				txtUsuario.ForeColor=Color.DimGray;
+			}
+		}
+		void TxtPasswordEnter(object sender, EventArgs e)
+		{
+			if (txtPassword.Text=="Contraseña") 
+			{
+				txtPassword.Text="";
+				txtPassword.ForeColor=Color.LightGray;
+				txtPassword.UseSystemPasswordChar=true;
+			}
+		}
+		void TxtPasswordLeave(object sender, EventArgs e)
+		{
+			if (txtPassword.Text=="") 
+			{
+				txtPassword.Text="Contraseña";
+				txtPassword.ForeColor=Color.DimGray;
+			}
+		}
+		void BtnCerrarClick(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+		void BtnMinimizarClick(object sender, EventArgs e)
+		{
+			this.WindowState = FormWindowState.Minimized;
+		}
+		void BtnAccederClick(object sender, EventArgs e)
+		{
+			string condicion = String.Format("Usuario='{0}'",txtUsuario.Text);
+			string [] datos = FrameBD.ObtieneCampos("usuarios",condicion,"Usuario,Password,Rol");
+			
+			if (datos.Length>1) 
+			{
+				if (datos[1]==txtPassword.Text)
+				{
+					MessageBox.Show("Bienvenido "+datos[2]);
+				}else
+					MessageBox.Show("La contraseña es incorrecta");
+			}else
+				MessageBox.Show("El usuario no existe");
+		}
+		
+		
+		
+		
+		
+		
 	}
 }

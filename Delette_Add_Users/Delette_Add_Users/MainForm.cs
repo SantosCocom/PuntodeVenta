@@ -35,19 +35,21 @@ namespace Delette_Add_Users
 		}
 		void FormUsuariosLoad(object sender, EventArgs e)
 		{
-			gpbUsuarios.Visible=false;
 			btnAgregarUser.Visible=false;
 			btnModificarUser.Visible=false;
 			oEmpleados.BuscarEmpleado(txtBuscar.Text, dgvEmpleados);
+			gpbEmpleados.Enabled=false;
+			gpbUsuarios.Enabled=false;
 		}
 		void BtnAgregarClick(object sender, EventArgs e)
 		{
-			gpbUsuarios.Visible=true;
 			btnAgregar.Visible=false;
 			btnModificar.Enabled=false;
 			btnEliminar.Enabled=false;
 			btnModificarUser.Visible=false;
 			btnAgregarUser.Visible=true;
+			gpbEmpleados.Enabled=true;
+			gpbUsuarios.Enabled=true;
 		}
 		void BtnModificarClick(object sender, EventArgs e)
 		{
@@ -62,6 +64,44 @@ namespace Delette_Add_Users
 		{
 			oEmpleados.BuscarEmpleado(txtBuscar.Text,dgvEmpleados);
 		}
+		void BtnAgregarUserClick(object sender, EventArgs e)
+		{
+			oEmpleados.Id_empleado=txtCurp.Text;
+			oEmpleados.Nombre=txtNombre.Text;
+			oEmpleados.Apellido_paterno=txtApellidoP.Text;
+			oEmpleados.Apellido_materno=txtApellidoM.Text;
+			oEmpleados.Localidad=txtLocalidad.Text;
+			oEmpleados.Direccion=txtDireccion.Text;
+			oEmpleados.Telefono=txtTelefono.Text;
+			
+			
+			oEmpleados.Usuario=txtUser.Text;
+			oEmpleados.Password=txtPassword.Text;
+			oEmpleados.Rol=txtRol.Text;
+			
+			oEmpleados.InsertarEmpleado();
+			
+			string curp=txtCurp.Text;
+			
+			txtCurpUser.Text=curp;
+			
+			oEmpleados.InsertarUsuario();
+			oEmpleados.BuscarEmpleado(txtBuscar.Text,dgvEmpleados);//Actualiza el datagrid 
+		}
+		void BtnEliminarClick(object sender, EventArgs e)
+		{
+			if (MessageBox.Show("Esta seguro de eliminar","Cuidado",MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation)== DialogResult.Yes) 
+			{
+				string clave = dgvEmpleados[0,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
+				oEmpleados.EliminarEmpleado(clave);
+				oEmpleados.BuscarEmpleado(txtBuscar.Text,dgvEmpleados);//Actualiza el datagrid 
+				
+			}
+		}
+		
+		
+		
+		
 		
 		
 		

@@ -43,6 +43,12 @@ namespace Delette_Add_Users
 		private System.Windows.Forms.Button btnAgregarUser;
 		private System.Windows.Forms.Button btnModificarUser;
 		private System.Windows.Forms.Button btnCancelar;
+		private System.Windows.Forms.TextBox txtLocalidad;
+		private System.Windows.Forms.Label label12;
+		private System.Windows.Forms.TextBox txtRol;
+		private System.Windows.Forms.Label label11;
+		private System.Windows.Forms.TextBox txtCurpUser;
+		private System.Windows.Forms.Label label13;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -66,6 +72,8 @@ namespace Delette_Add_Users
 		private void InitializeComponent()
 		{
 			this.gpbEmpleados = new System.Windows.Forms.GroupBox();
+			this.txtLocalidad = new System.Windows.Forms.TextBox();
+			this.label12 = new System.Windows.Forms.Label();
 			this.txtDireccion = new System.Windows.Forms.TextBox();
 			this.label5 = new System.Windows.Forms.Label();
 			this.txtTelefono = new System.Windows.Forms.TextBox();
@@ -82,6 +90,10 @@ namespace Delette_Add_Users
 			this.label1 = new System.Windows.Forms.Label();
 			this.dgvEmpleados = new System.Windows.Forms.DataGridView();
 			this.gpbUsuarios = new System.Windows.Forms.GroupBox();
+			this.txtCurpUser = new System.Windows.Forms.TextBox();
+			this.label13 = new System.Windows.Forms.Label();
+			this.txtRol = new System.Windows.Forms.TextBox();
+			this.label11 = new System.Windows.Forms.Label();
 			this.txtPassword = new System.Windows.Forms.TextBox();
 			this.label9 = new System.Windows.Forms.Label();
 			this.txtUser = new System.Windows.Forms.TextBox();
@@ -101,6 +113,8 @@ namespace Delette_Add_Users
 			// 
 			// gpbEmpleados
 			// 
+			this.gpbEmpleados.Controls.Add(this.txtLocalidad);
+			this.gpbEmpleados.Controls.Add(this.label12);
 			this.gpbEmpleados.Controls.Add(this.txtDireccion);
 			this.gpbEmpleados.Controls.Add(this.label5);
 			this.gpbEmpleados.Controls.Add(this.txtTelefono);
@@ -117,10 +131,25 @@ namespace Delette_Add_Users
 			this.gpbEmpleados.Controls.Add(this.label1);
 			this.gpbEmpleados.Location = new System.Drawing.Point(20, 46);
 			this.gpbEmpleados.Name = "gpbEmpleados";
-			this.gpbEmpleados.Size = new System.Drawing.Size(332, 219);
+			this.gpbEmpleados.Size = new System.Drawing.Size(332, 261);
 			this.gpbEmpleados.TabIndex = 0;
 			this.gpbEmpleados.TabStop = false;
 			this.gpbEmpleados.Text = "Datos del Empleado";
+			// 
+			// txtLocalidad
+			// 
+			this.txtLocalidad.Location = new System.Drawing.Point(106, 157);
+			this.txtLocalidad.Name = "txtLocalidad";
+			this.txtLocalidad.Size = new System.Drawing.Size(196, 20);
+			this.txtLocalidad.TabIndex = 15;
+			// 
+			// label12
+			// 
+			this.label12.Location = new System.Drawing.Point(14, 160);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(98, 17);
+			this.label12.TabIndex = 14;
+			this.label12.Text = "Localidad:";
 			// 
 			// txtDireccion
 			// 
@@ -139,14 +168,14 @@ namespace Delette_Add_Users
 			// 
 			// txtTelefono
 			// 
-			this.txtTelefono.Location = new System.Drawing.Point(106, 157);
+			this.txtTelefono.Location = new System.Drawing.Point(106, 212);
 			this.txtTelefono.Name = "txtTelefono";
 			this.txtTelefono.Size = new System.Drawing.Size(196, 20);
 			this.txtTelefono.TabIndex = 11;
 			// 
 			// label6
 			// 
-			this.label6.Location = new System.Drawing.Point(14, 160);
+			this.label6.Location = new System.Drawing.Point(14, 215);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(98, 17);
 			this.label6.TabIndex = 10;
@@ -235,32 +264,67 @@ namespace Delette_Add_Users
 			this.dgvEmpleados.Location = new System.Drawing.Point(373, 46);
 			this.dgvEmpleados.Name = "dgvEmpleados";
 			this.dgvEmpleados.ReadOnly = true;
-			this.dgvEmpleados.Size = new System.Drawing.Size(459, 312);
+			this.dgvEmpleados.Size = new System.Drawing.Size(459, 390);
 			this.dgvEmpleados.TabIndex = 1;
 			// 
 			// gpbUsuarios
 			// 
+			this.gpbUsuarios.Controls.Add(this.txtCurpUser);
+			this.gpbUsuarios.Controls.Add(this.label13);
+			this.gpbUsuarios.Controls.Add(this.txtRol);
+			this.gpbUsuarios.Controls.Add(this.label11);
 			this.gpbUsuarios.Controls.Add(this.txtPassword);
 			this.gpbUsuarios.Controls.Add(this.label9);
 			this.gpbUsuarios.Controls.Add(this.txtUser);
 			this.gpbUsuarios.Controls.Add(this.label8);
-			this.gpbUsuarios.Location = new System.Drawing.Point(20, 279);
+			this.gpbUsuarios.Location = new System.Drawing.Point(20, 332);
 			this.gpbUsuarios.Name = "gpbUsuarios";
-			this.gpbUsuarios.Size = new System.Drawing.Size(331, 113);
+			this.gpbUsuarios.Size = new System.Drawing.Size(332, 160);
 			this.gpbUsuarios.TabIndex = 2;
 			this.gpbUsuarios.TabStop = false;
 			this.gpbUsuarios.Text = "Datos del Usuario";
 			// 
+			// txtCurpUser
+			// 
+			this.txtCurpUser.Enabled = false;
+			this.txtCurpUser.Location = new System.Drawing.Point(124, 32);
+			this.txtCurpUser.Name = "txtCurpUser";
+			this.txtCurpUser.Size = new System.Drawing.Size(178, 20);
+			this.txtCurpUser.TabIndex = 7;
+			// 
+			// label13
+			// 
+			this.label13.Location = new System.Drawing.Point(14, 36);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(88, 16);
+			this.label13.TabIndex = 6;
+			this.label13.Text = "Curp:";
+			// 
+			// txtRol
+			// 
+			this.txtRol.Location = new System.Drawing.Point(124, 119);
+			this.txtRol.Name = "txtRol";
+			this.txtRol.Size = new System.Drawing.Size(178, 20);
+			this.txtRol.TabIndex = 5;
+			// 
+			// label11
+			// 
+			this.label11.Location = new System.Drawing.Point(14, 122);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(86, 23);
+			this.label11.TabIndex = 4;
+			this.label11.Text = "Rol:";
+			// 
 			// txtPassword
 			// 
-			this.txtPassword.Location = new System.Drawing.Point(122, 58);
+			this.txtPassword.Location = new System.Drawing.Point(124, 93);
 			this.txtPassword.Name = "txtPassword";
 			this.txtPassword.Size = new System.Drawing.Size(178, 20);
 			this.txtPassword.TabIndex = 3;
 			// 
 			// label9
 			// 
-			this.label9.Location = new System.Drawing.Point(12, 61);
+			this.label9.Location = new System.Drawing.Point(14, 96);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(86, 23);
 			this.label9.TabIndex = 2;
@@ -268,14 +332,14 @@ namespace Delette_Add_Users
 			// 
 			// txtUser
 			// 
-			this.txtUser.Location = new System.Drawing.Point(122, 29);
+			this.txtUser.Location = new System.Drawing.Point(124, 64);
 			this.txtUser.Name = "txtUser";
 			this.txtUser.Size = new System.Drawing.Size(178, 20);
 			this.txtUser.TabIndex = 1;
 			// 
 			// label8
 			// 
-			this.label8.Location = new System.Drawing.Point(12, 32);
+			this.label8.Location = new System.Drawing.Point(14, 67);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(104, 23);
 			this.label8.TabIndex = 0;
@@ -283,7 +347,7 @@ namespace Delette_Add_Users
 			// 
 			// btnAgregar
 			// 
-			this.btnAgregar.Location = new System.Drawing.Point(388, 378);
+			this.btnAgregar.Location = new System.Drawing.Point(388, 449);
 			this.btnAgregar.Name = "btnAgregar";
 			this.btnAgregar.Size = new System.Drawing.Size(75, 23);
 			this.btnAgregar.TabIndex = 3;
@@ -293,7 +357,7 @@ namespace Delette_Add_Users
 			// 
 			// btnModificar
 			// 
-			this.btnModificar.Location = new System.Drawing.Point(516, 378);
+			this.btnModificar.Location = new System.Drawing.Point(516, 449);
 			this.btnModificar.Name = "btnModificar";
 			this.btnModificar.Size = new System.Drawing.Size(75, 23);
 			this.btnModificar.TabIndex = 4;
@@ -303,12 +367,13 @@ namespace Delette_Add_Users
 			// 
 			// btnEliminar
 			// 
-			this.btnEliminar.Location = new System.Drawing.Point(645, 378);
+			this.btnEliminar.Location = new System.Drawing.Point(648, 449);
 			this.btnEliminar.Name = "btnEliminar";
 			this.btnEliminar.Size = new System.Drawing.Size(75, 23);
 			this.btnEliminar.TabIndex = 5;
 			this.btnEliminar.Text = "Eliminar";
 			this.btnEliminar.UseVisualStyleBackColor = true;
+			this.btnEliminar.Click += new System.EventHandler(this.BtnEliminarClick);
 			// 
 			// label10
 			// 
@@ -328,16 +393,17 @@ namespace Delette_Add_Users
 			// 
 			// btnAgregarUser
 			// 
-			this.btnAgregarUser.Location = new System.Drawing.Point(388, 378);
+			this.btnAgregarUser.Location = new System.Drawing.Point(388, 449);
 			this.btnAgregarUser.Name = "btnAgregarUser";
 			this.btnAgregarUser.Size = new System.Drawing.Size(75, 23);
 			this.btnAgregarUser.TabIndex = 8;
 			this.btnAgregarUser.Text = "AgregarUser";
 			this.btnAgregarUser.UseVisualStyleBackColor = true;
+			this.btnAgregarUser.Click += new System.EventHandler(this.BtnAgregarUserClick);
 			// 
 			// btnModificarUser
 			// 
-			this.btnModificarUser.Location = new System.Drawing.Point(516, 378);
+			this.btnModificarUser.Location = new System.Drawing.Point(516, 449);
 			this.btnModificarUser.Name = "btnModificarUser";
 			this.btnModificarUser.Size = new System.Drawing.Size(75, 23);
 			this.btnModificarUser.TabIndex = 9;
@@ -346,7 +412,7 @@ namespace Delette_Add_Users
 			// 
 			// btnCancelar
 			// 
-			this.btnCancelar.Location = new System.Drawing.Point(757, 378);
+			this.btnCancelar.Location = new System.Drawing.Point(757, 449);
 			this.btnCancelar.Name = "btnCancelar";
 			this.btnCancelar.Size = new System.Drawing.Size(75, 23);
 			this.btnCancelar.TabIndex = 10;
@@ -357,7 +423,7 @@ namespace Delette_Add_Users
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(844, 430);
+			this.ClientSize = new System.Drawing.Size(844, 504);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnModificarUser);
 			this.Controls.Add(this.btnAgregarUser);

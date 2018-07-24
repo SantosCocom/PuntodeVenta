@@ -21,11 +21,13 @@ namespace Delette_Add_Users.Controllers
 		public string Nombre {get; set;}
 		public string Apellido_paterno {get; set;}
 		public string Apellido_materno {get; set;}
+		public string Localidad {get; set;}
 		public string Direccion {get; set;}
 		public string Telefono {get; set;}
 		
-		public string FormUsuarios {get; set;}
+		public string Usuario {get; set;}
 		public string Password {get; set;}
+		public string Rol {get; set;}
 		
 		public EmpleadosControllers()
 		{
@@ -37,5 +39,24 @@ namespace Delette_Add_Users.Controllers
 			dgv.DataSource = FrameBD.SQLSEL(sql);
 			dgv.DataMember= "datos";
 		}
+		public void InsertarEmpleado()
+		{
+			string sql= string.Format("INSERT INTO empleados(Id_empleado,Nombre,Apellido_paterno,Apellido_materno,Localidad,Direccion,Telefono) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}')",
+			                         Id_empleado,Nombre,Apellido_paterno,Apellido_materno,Localidad,Direccion,Telefono);
+			FrameBD.SQLIDU(sql);
+		}
+		public void InsertarUsuario()
+		{
+			string sql= string.Format("INSERT INTO usuarios(Usuario,Password,Rol) VALUES ('{0}','{1}','{2}')",
+			                         Usuario,Password,Rol);
+			FrameBD.SQLIDU(sql);
+		}
+		
+		public void EliminarEmpleado(string pk)
+		{
+			string sql=string.Format("DELETE FROM empleados WHERE Id_empleado='{0}';",pk);
+			FrameBD.SQLIDU(sql);
+		}
+		
 	}
 }

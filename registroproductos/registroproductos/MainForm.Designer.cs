@@ -76,9 +76,9 @@ namespace registroproductos
 			// 
 			// btnEditar
 			// 
-			this.btnEditar.Location = new System.Drawing.Point(440, 513);
+			this.btnEditar.Location = new System.Drawing.Point(285, 498);
 			this.btnEditar.Name = "btnEditar";
-			this.btnEditar.Size = new System.Drawing.Size(71, 26);
+			this.btnEditar.Size = new System.Drawing.Size(80, 32);
 			this.btnEditar.TabIndex = 20;
 			this.btnEditar.Text = "Modificar";
 			this.btnEditar.UseVisualStyleBackColor = true;
@@ -86,9 +86,9 @@ namespace registroproductos
 			// 
 			// btnEliminar
 			// 
-			this.btnEliminar.Location = new System.Drawing.Point(264, 516);
+			this.btnEliminar.Location = new System.Drawing.Point(172, 498);
 			this.btnEliminar.Name = "btnEliminar";
-			this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+			this.btnEliminar.Size = new System.Drawing.Size(81, 32);
 			this.btnEliminar.TabIndex = 19;
 			this.btnEliminar.Text = "Elimnar";
 			this.btnEliminar.UseVisualStyleBackColor = true;
@@ -122,9 +122,11 @@ namespace registroproductos
 			// 
 			// btnGuardarU
 			// 
-			this.btnGuardarU.Location = new System.Drawing.Point(44, 507);
+			this.btnGuardarU.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardarU.Image")));
+			this.btnGuardarU.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnGuardarU.Location = new System.Drawing.Point(44, 498);
 			this.btnGuardarU.Name = "btnGuardarU";
-			this.btnGuardarU.Size = new System.Drawing.Size(89, 23);
+			this.btnGuardarU.Size = new System.Drawing.Size(89, 32);
 			this.btnGuardarU.TabIndex = 21;
 			this.btnGuardarU.Text = "Guardar";
 			this.btnGuardarU.UseVisualStyleBackColor = true;
@@ -148,6 +150,7 @@ namespace registroproductos
 			this.txtTalla.Name = "txtTalla";
 			this.txtTalla.Size = new System.Drawing.Size(129, 20);
 			this.txtTalla.TabIndex = 75;
+			this.txtTalla.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtTallaKeyPress);
 			// 
 			// label8
 			// 
@@ -163,6 +166,7 @@ namespace registroproductos
 			this.txtDescripcion.Name = "txtDescripcion";
 			this.txtDescripcion.Size = new System.Drawing.Size(129, 20);
 			this.txtDescripcion.TabIndex = 69;
+			this.txtDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDescripcionKeyPress);
 			// 
 			// txtPrecio
 			// 
@@ -170,6 +174,7 @@ namespace registroproductos
 			this.txtPrecio.Name = "txtPrecio";
 			this.txtPrecio.Size = new System.Drawing.Size(129, 20);
 			this.txtPrecio.TabIndex = 68;
+			this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtPrecioKeyPress);
 			// 
 			// label4
 			// 
@@ -193,6 +198,7 @@ namespace registroproductos
 			this.txtProducto.Name = "txtProducto";
 			this.txtProducto.Size = new System.Drawing.Size(129, 20);
 			this.txtProducto.TabIndex = 65;
+			this.txtProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtProductoKeyPress);
 			// 
 			// txtClaveProducto
 			// 
@@ -200,6 +206,7 @@ namespace registroproductos
 			this.txtClaveProducto.Name = "txtClaveProducto";
 			this.txtClaveProducto.Size = new System.Drawing.Size(129, 20);
 			this.txtClaveProducto.TabIndex = 64;
+			this.txtClaveProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtClaveProductoKeyPress);
 			// 
 			// label3
 			// 

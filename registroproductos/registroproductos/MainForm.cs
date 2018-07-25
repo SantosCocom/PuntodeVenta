@@ -22,8 +22,8 @@ namespace registroproductos
 	/// </summary>
 	public partial class MainForm : Form
 	{
-		ProductosControllers oProducto = new ProductosControllers();
 		
+		ProductosControllers oProducto = new ProductosControllers();
 		public MainForm()
 		{
 			//
@@ -37,18 +37,46 @@ namespace registroproductos
 		}
 		void BtnGuardarClick(object sender, EventArgs e)
 		{
+			//VALIDANDO LAS CAJAS DE TEXTO 
+			
+			if ( txtClaveProducto.Text== "")
+			{
+				MessageBox.Show("Ingrese datos");
+			}
+			if ( txtProducto.Text== "")
+			{
+				MessageBox.Show("Ingrese datos");
+			}
+			if ( txtPrecio.Text== "")
+			{
+				txtPrecio.Text="0";
+			}
+			if ( txtTalla.Text== "")
+			{
+				MessageBox.Show("Ingrese datos");
+			}
+			if ( txtDescripcion.Text== "")
+			{
+				MessageBox.Show("Ingrese datos");
+			}
+			else{
+				//AGREGAR PRODUCTO
 			oProducto.id_producto=txtClaveProducto.Text;
 			oProducto.Nombre=txtProducto.Text;
 			oProducto.Precio=Convert.ToSingle(txtPrecio.Text);
+			oProducto.Talla=txtTalla.Text;
 			oProducto.Descripcion=txtDescripcion.Text;
 			oProducto.store();
-			
+			}
+			//BUSCAR PRODUCTO
 			oProducto.buscarproducto(txtBuscarProducto.Text,dataGridView1);
 			txtClaveProducto.Clear();
 			txtProducto.Clear();
 			txtPrecio.Clear();
+			txtTalla.Clear();
 			txtDescripcion.Clear();
 			txtBuscarProducto.Focus();
+			
 		}
 		void MainFormLoad(object sender, EventArgs e)
 		{
@@ -58,6 +86,7 @@ namespace registroproductos
 		{
 			oProducto.buscarproducto(txtBuscarProducto.Text,dataGridView1);
 		}
+		//ELIMINAR PRODUCTO
 		void BtnEliminarClick(object sender, EventArgs e)
 		{
 			if (MessageBox.Show("Estas seguro de eliminar","Cuidado",MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation)==DialogResult.Yes)
@@ -67,6 +96,7 @@ namespace registroproductos
 				oProducto.buscarproducto(txtBuscarProducto.Text,dataGridView1);
 			}
 		}
+		//EDITAR PRODUCTO
 		void BtnEditarClick(object sender, EventArgs e)
 		{
 			txtClaveProducto.Text = dataGridView1[0,dataGridView1.CurrentCellAddress.Y].Value.ToString();
@@ -90,6 +120,28 @@ namespace registroproductos
 			btnGuardarU.Visible=false;
 			btnGuardar.Visible=true;
 		}
+		//VALIDANDO LOS TIPOS DE DATOS
+		void TxtClaveProductoKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar = Validaciones.valida("U",e.KeyChar);
+		}
+		void TxtProductoKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar = Validaciones.valida("T",e.KeyChar);
+		}
+		void TxtPrecioKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar = Validaciones.validaReal(txtPrecio,e.KeyChar);
+		}
+		void TxtDescripcionKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar = Validaciones.valida("T",e.KeyChar);
+		}
+		void TxtTallaKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar = Validaciones.valida("U",e.KeyChar);
+		}
+		
 		
 		
 		

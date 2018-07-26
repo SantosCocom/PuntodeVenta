@@ -239,7 +239,7 @@ namespace agregarClientes
 			// 
 			this.txtBuscar.Location = new System.Drawing.Point(82, 27);
 			this.txtBuscar.Name = "txtBuscar";
-			this.txtBuscar.Size = new System.Drawing.Size(825, 20);
+			this.txtBuscar.Size = new System.Drawing.Size(576, 20);
 			this.txtBuscar.TabIndex = 13;
 			this.txtBuscar.TextChanged += new System.EventHandler(this.TxtBuscarTextChanged);
 			this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBuscarKeyPress);
@@ -256,9 +256,12 @@ namespace agregarClientes
 			// 
 			// dgvClientes
 			// 
+			this.dgvClientes.AllowUserToAddRows = false;
+			this.dgvClientes.AllowUserToDeleteRows = false;
 			this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvClientes.Location = new System.Drawing.Point(12, 53);
 			this.dgvClientes.Name = "dgvClientes";
+			this.dgvClientes.ReadOnly = true;
 			this.dgvClientes.Size = new System.Drawing.Size(646, 373);
 			this.dgvClientes.TabIndex = 14;
 			// 
@@ -266,7 +269,7 @@ namespace agregarClientes
 			// 
 			this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
 			this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnGuardar.Location = new System.Drawing.Point(674, 444);
+			this.btnGuardar.Location = new System.Drawing.Point(655, 444);
 			this.btnGuardar.Name = "btnGuardar";
 			this.btnGuardar.Size = new System.Drawing.Size(105, 38);
 			this.btnGuardar.TabIndex = 15;
@@ -290,7 +293,7 @@ namespace agregarClientes
 			// 
 			this.btnAñadir.Image = ((System.Drawing.Image)(resources.GetObject("btnAñadir.Image")));
 			this.btnAñadir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnAñadir.Location = new System.Drawing.Point(94, 444);
+			this.btnAñadir.Location = new System.Drawing.Point(124, 444);
 			this.btnAñadir.Name = "btnAñadir";
 			this.btnAñadir.Size = new System.Drawing.Size(105, 38);
 			this.btnAñadir.TabIndex = 17;
@@ -302,7 +305,7 @@ namespace agregarClientes
 			// 
 			this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
 			this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnEditar.Location = new System.Drawing.Point(274, 444);
+			this.btnEditar.Location = new System.Drawing.Point(452, 444);
 			this.btnEditar.Name = "btnEditar";
 			this.btnEditar.Size = new System.Drawing.Size(105, 38);
 			this.btnEditar.TabIndex = 18;
@@ -314,7 +317,7 @@ namespace agregarClientes
 			// 
 			this.btnGuardarEdi.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardarEdi.Image")));
 			this.btnGuardarEdi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnGuardarEdi.Location = new System.Drawing.Point(674, 444);
+			this.btnGuardarEdi.Location = new System.Drawing.Point(655, 444);
 			this.btnGuardarEdi.Name = "btnGuardarEdi";
 			this.btnGuardarEdi.Size = new System.Drawing.Size(105, 38);
 			this.btnGuardarEdi.TabIndex = 19;

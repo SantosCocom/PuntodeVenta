@@ -38,6 +38,7 @@ namespace Delette_Add_Users
 			btnAgregarUser.Visible=false;
 			btnModificarUser.Visible=false;
 			oEmpleados.BuscarEmpleado(txtBuscar.Text, dgvEmpleados);
+			oEmpleados.BuscarUsuario(txtBuscar.Text, dgvUsuarios);//Actualiza el datagrid de usuarios
 			gpbEmpleados.Enabled=false;
 			gpbUsuarios.Enabled=false;
 		}
@@ -58,6 +59,21 @@ namespace Delette_Add_Users
 			gpbUsuarios.Visible=true;
 			btnAgregar.Enabled=false;
 			btnEliminar.Enabled=false;
+			gpbUsuarios.Enabled=true;
+			gpbEmpleados.Enabled=true;
+			
+			txtCurp.Text = dgvEmpleados[0,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
+			txtNombre.Text = dgvEmpleados[1,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
+			txtApellidoP.Text = dgvEmpleados[2,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
+			txtApellidoM.Text = dgvEmpleados[3,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
+			txtLocalidad.Text = dgvEmpleados[4,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
+			txtDireccion.Text = dgvEmpleados[5,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
+			txtTelefono.Text = dgvEmpleados[6,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
+			
+			txtUser.Text = dgvUsuarios[0,dgvUsuarios.CurrentCellAddress.Y].Value.ToString();
+			txtPassword.Text = dgvUsuarios[1,dgvUsuarios.CurrentCellAddress.Y].Value.ToString();
+			txtRol.Text = dgvUsuarios[2,dgvUsuarios.CurrentCellAddress.Y].Value.ToString();
+			txtCurpUser.Text = dgvUsuarios[3,dgvUsuarios.CurrentCellAddress.Y].Value.ToString();
 			
 		}
 		void TxtBuscarTextChanged(object sender, EventArgs e)
@@ -98,6 +114,30 @@ namespace Delette_Add_Users
 				
 			}
 		}
+		void BtnModificarUserClick(object sender, EventArgs e)
+		{
+			oEmpleados.ActualizarEmpleado(txtCurp.Text,txtNombre.Text,txtApellidoP.Text,txtApellidoM.Text,txtLocalidad.Text,txtDireccion.Text,txtTelefono.Text);
+			oEmpleados.ActualizarUsuario(txtCurpUser.Text, txtUser.Text, txtPassword.Text, txtRol.Text);
+			oEmpleados.BuscarEmpleado(txtBuscar.Text,dgvEmpleados);//Actualiza el datagrid de empleados
+			oEmpleados.BuscarUsuario(txtBuscar.Text, dgvUsuarios);//Actualiza el datagrid de usuarios
+			
+			txtCurp.Clear();
+			txtNombre.Clear();
+			txtApellidoP.Clear();
+			txtApellidoM.Clear();
+			txtLocalidad.Clear();
+			txtDireccion.Clear();
+			txtTelefono.Clear();
+			
+			txtCurpUser.Clear();
+			txtUser.Clear();
+			txtPassword.Clear();
+			txtRol.Clear();
+			
+			btnModificar.Visible=false;
+		}
+		
+		
 		
 		
 		

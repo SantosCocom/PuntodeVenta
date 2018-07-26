@@ -20,8 +20,6 @@ namespace Delette_Add_Users
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.TextBox txtTelefono;
 		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.TextBox txtEdad;
-		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.TextBox txtApellidoM;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.TextBox txtApellidoP;
@@ -49,6 +47,7 @@ namespace Delette_Add_Users
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.TextBox txtCurpUser;
 		private System.Windows.Forms.Label label13;
+		private System.Windows.Forms.DataGridView dgvUsuarios;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -78,8 +77,6 @@ namespace Delette_Add_Users
 			this.label5 = new System.Windows.Forms.Label();
 			this.txtTelefono = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
-			this.txtEdad = new System.Windows.Forms.TextBox();
-			this.label7 = new System.Windows.Forms.Label();
 			this.txtApellidoM = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.txtApellidoP = new System.Windows.Forms.TextBox();
@@ -106,9 +103,11 @@ namespace Delette_Add_Users
 			this.btnAgregarUser = new System.Windows.Forms.Button();
 			this.btnModificarUser = new System.Windows.Forms.Button();
 			this.btnCancelar = new System.Windows.Forms.Button();
+			this.dgvUsuarios = new System.Windows.Forms.DataGridView();
 			this.gpbEmpleados.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
 			this.gpbUsuarios.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// gpbEmpleados
@@ -119,8 +118,6 @@ namespace Delette_Add_Users
 			this.gpbEmpleados.Controls.Add(this.label5);
 			this.gpbEmpleados.Controls.Add(this.txtTelefono);
 			this.gpbEmpleados.Controls.Add(this.label6);
-			this.gpbEmpleados.Controls.Add(this.txtEdad);
-			this.gpbEmpleados.Controls.Add(this.label7);
 			this.gpbEmpleados.Controls.Add(this.txtApellidoM);
 			this.gpbEmpleados.Controls.Add(this.label4);
 			this.gpbEmpleados.Controls.Add(this.txtApellidoP);
@@ -138,14 +135,14 @@ namespace Delette_Add_Users
 			// 
 			// txtLocalidad
 			// 
-			this.txtLocalidad.Location = new System.Drawing.Point(106, 157);
+			this.txtLocalidad.Location = new System.Drawing.Point(106, 131);
 			this.txtLocalidad.Name = "txtLocalidad";
 			this.txtLocalidad.Size = new System.Drawing.Size(196, 20);
 			this.txtLocalidad.TabIndex = 15;
 			// 
 			// label12
 			// 
-			this.label12.Location = new System.Drawing.Point(14, 160);
+			this.label12.Location = new System.Drawing.Point(14, 134);
 			this.label12.Name = "label12";
 			this.label12.Size = new System.Drawing.Size(98, 17);
 			this.label12.TabIndex = 14;
@@ -153,14 +150,14 @@ namespace Delette_Add_Users
 			// 
 			// txtDireccion
 			// 
-			this.txtDireccion.Location = new System.Drawing.Point(106, 183);
+			this.txtDireccion.Location = new System.Drawing.Point(106, 157);
 			this.txtDireccion.Name = "txtDireccion";
 			this.txtDireccion.Size = new System.Drawing.Size(196, 20);
 			this.txtDireccion.TabIndex = 13;
 			// 
 			// label5
 			// 
-			this.label5.Location = new System.Drawing.Point(14, 186);
+			this.label5.Location = new System.Drawing.Point(14, 160);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(98, 17);
 			this.label5.TabIndex = 12;
@@ -168,33 +165,18 @@ namespace Delette_Add_Users
 			// 
 			// txtTelefono
 			// 
-			this.txtTelefono.Location = new System.Drawing.Point(106, 212);
+			this.txtTelefono.Location = new System.Drawing.Point(106, 186);
 			this.txtTelefono.Name = "txtTelefono";
 			this.txtTelefono.Size = new System.Drawing.Size(196, 20);
 			this.txtTelefono.TabIndex = 11;
 			// 
 			// label6
 			// 
-			this.label6.Location = new System.Drawing.Point(14, 215);
+			this.label6.Location = new System.Drawing.Point(14, 189);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(98, 17);
 			this.label6.TabIndex = 10;
 			this.label6.Text = "Teléfono:";
-			// 
-			// txtEdad
-			// 
-			this.txtEdad.Location = new System.Drawing.Point(106, 131);
-			this.txtEdad.Name = "txtEdad";
-			this.txtEdad.Size = new System.Drawing.Size(196, 20);
-			this.txtEdad.TabIndex = 9;
-			// 
-			// label7
-			// 
-			this.label7.Location = new System.Drawing.Point(12, 134);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(88, 16);
-			this.label7.TabIndex = 8;
-			this.label7.Text = "Edad:";
 			// 
 			// txtApellidoM
 			// 
@@ -264,7 +246,7 @@ namespace Delette_Add_Users
 			this.dgvEmpleados.Location = new System.Drawing.Point(373, 46);
 			this.dgvEmpleados.Name = "dgvEmpleados";
 			this.dgvEmpleados.ReadOnly = true;
-			this.dgvEmpleados.Size = new System.Drawing.Size(459, 390);
+			this.dgvEmpleados.Size = new System.Drawing.Size(459, 203);
 			this.dgvEmpleados.TabIndex = 1;
 			// 
 			// gpbUsuarios
@@ -393,7 +375,7 @@ namespace Delette_Add_Users
 			// 
 			// btnAgregarUser
 			// 
-			this.btnAgregarUser.Location = new System.Drawing.Point(388, 449);
+			this.btnAgregarUser.Location = new System.Drawing.Point(388, 469);
 			this.btnAgregarUser.Name = "btnAgregarUser";
 			this.btnAgregarUser.Size = new System.Drawing.Size(75, 23);
 			this.btnAgregarUser.TabIndex = 8;
@@ -403,12 +385,13 @@ namespace Delette_Add_Users
 			// 
 			// btnModificarUser
 			// 
-			this.btnModificarUser.Location = new System.Drawing.Point(516, 449);
+			this.btnModificarUser.Location = new System.Drawing.Point(516, 469);
 			this.btnModificarUser.Name = "btnModificarUser";
 			this.btnModificarUser.Size = new System.Drawing.Size(75, 23);
 			this.btnModificarUser.TabIndex = 9;
 			this.btnModificarUser.Text = "ModificarUser";
 			this.btnModificarUser.UseVisualStyleBackColor = true;
+			this.btnModificarUser.Click += new System.EventHandler(this.BtnModificarUserClick);
 			// 
 			// btnCancelar
 			// 
@@ -419,11 +402,23 @@ namespace Delette_Add_Users
 			this.btnCancelar.Text = "Cancelar";
 			this.btnCancelar.UseVisualStyleBackColor = true;
 			// 
+			// dgvUsuarios
+			// 
+			this.dgvUsuarios.AllowUserToAddRows = false;
+			this.dgvUsuarios.AllowUserToDeleteRows = false;
+			this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvUsuarios.Location = new System.Drawing.Point(373, 268);
+			this.dgvUsuarios.Name = "dgvUsuarios";
+			this.dgvUsuarios.ReadOnly = true;
+			this.dgvUsuarios.Size = new System.Drawing.Size(459, 175);
+			this.dgvUsuarios.TabIndex = 11;
+			// 
 			// FormUsuarios
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(844, 504);
+			this.Controls.Add(this.dgvUsuarios);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnModificarUser);
 			this.Controls.Add(this.btnAgregarUser);
@@ -444,6 +439,7 @@ namespace Delette_Add_Users
 			((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
 			this.gpbUsuarios.ResumeLayout(false);
 			this.gpbUsuarios.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

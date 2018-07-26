@@ -39,6 +39,12 @@ namespace Delette_Add_Users.Controllers
 			dgv.DataSource = FrameBD.SQLSEL(sql);
 			dgv.DataMember= "datos";
 		}
+		public void BuscarUsuario(string user, DataGridView data)
+		{
+			string sql="SELECT * from Usuarios WHERE Usuario LIKE'" + user + "%'";
+			data.DataSource = FrameBD.SQLSEL(sql);
+			data.DataMember= "datos";
+		}
 		public void InsertarEmpleado()
 		{
 			string sql= string.Format("INSERT INTO empleados(Id_empleado,Nombre,Apellido_paterno,Apellido_materno,Localidad,Direccion,Telefono) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}')",
@@ -57,6 +63,18 @@ namespace Delette_Add_Users.Controllers
 			string sql=string.Format("DELETE FROM empleados WHERE Id_empleado='{0}';",pk);
 			FrameBD.SQLIDU(sql);
 		}
+		public void ActualizarEmpleado(string nom, string ap, string am, string loc, string dir, string tel, string pk)
+		{
+			string sql= string.Format("UPDATE empleados SET Nombre='{0}',Apellido_paterno='{1}',Apellido_materno='{2}',Localidad='{3}',Direccion='{4}',Telefono='{5}' WHERE Id_empleado ='{6}';",nom,ap,am,loc,dir,tel,pk);
+			FrameBD.SQLIDU(sql);
+		}
+		public void ActualizarUsuario(string user, string pass, string rool, string pk)
+		{
+			string sql= string.Format("UPDATE usuarios SET Usuario='{0}',Password='{1}',Rol='{2}' WHERE Id_empleado='{3}';",user,pass,rool,pk);
+			FrameBD.SQLIDU(sql);
+		
+		}
+		
 		
 	}
 }

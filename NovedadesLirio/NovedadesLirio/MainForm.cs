@@ -37,9 +37,17 @@ namespace NovedadesLirio
 			VentasController poner = new VentasController();
 			
 			string condicion=string.Format("id_producto='{0}'",txtClave.Text);
-			dgvProductos.Rows.Add(FrameBD.ObtieneCampos("productos",condicion,"precio,nombre"));
+			dgvProductos.Rows.Add(FrameBD.ObtieneCampos("productos",condicion,"id_producto,nombre,precio,1,precio"));
 			poner.total(dgvProductos,lvlResultado);
-			
+		}
+		void DgvProductosKeyDown(object sender, KeyEventArgs e)
+		{
+			if (e.KeyCode==Keys.Insert)
+			{
+				dgvProductos["cantidad",dgvProductos.CurrentCellAddress.Y].Value = Convert.ToInt32(dgvProductos["cantidad",dgvProductos.CurrentCellAddress.Y].Value) +1;
+				dgvProductos["Total",dgvProductos.CurrentCellAddress.Y].Value = Convert.ToInt32(dgvProductos["cantidad",dgvProductos.CurrentCellAddress.Y].Value.ToString()) * Convert.ToDouble(dgvProductos[2,dgvProductos.CurrentCellAddress.Y].Value.ToString());
+			}
+				
 		}
 		
 		

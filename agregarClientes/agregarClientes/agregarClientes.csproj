@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{6C316F36-DAD9-4873-866D-A63671945E37}</ProjectGuid>
+    <ProjectGuid>{3D4414D5-E9A7-47C2-9E77-8625A7B7A62D}</ProjectGuid>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>NovedadesLirio</RootNamespace>
-    <AssemblyName>NovedadesLirio</AssemblyName>
+    <RootNamespace>agregarClientes</RootNamespace>
+    <AssemblyName>agregarClientes</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
   </PropertyGroup>
@@ -34,9 +34,7 @@
     <Reference Include="Microsoft.CSharp">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="MySql.Data">
-      <HintPath>..\..\..\..\..\..\Program Files %28x86%29\MySQL\MySQL Connector Net 6.8.8\Assemblies\v4.0\MySql.Data.dll</HintPath>
-    </Reference>
+    <Reference Include="MySql.Data" />
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -54,21 +52,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FrameBD.cs" />
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="New Folder\ClientesController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Validaciones.cs" />
-    <Compile Include="VentasController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -77,10 +68,9 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="New Folder" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

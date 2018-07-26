@@ -34,6 +34,7 @@ namespace agregarClientes
 			btnGuardar.Visible=false;
 			btnGuardarEdi.Visible=false;
 			btnCancelar.Visible=false;
+			btnEliminar.Visible=false;
 			
 			
 			txtNombre.ReadOnly=true;
@@ -116,7 +117,7 @@ namespace agregarClientes
 			
 			btnAñadir.Visible=true;
 			btnEditar.Visible=true;
-			btnEliminar.Visible=true;
+			btnEliminar.Visible=false;
 			btnCancelar.Visible=false;
 			grbDatos.Visible=false;
 			
@@ -153,7 +154,7 @@ namespace agregarClientes
 			btnCancelar.Visible=true;
 			btnGuardarEdi.Visible=true;
 		}
-		//GUARAD EDICIÓN DE LOS REGISTROS
+		//GUARda EDICIÓN DE LOS REGISTROS
 		void BtnGuardarEdiClick(object sender, EventArgs e)
 		{
 			ClearError();
@@ -182,7 +183,7 @@ namespace agregarClientes
 			
 			btnAñadir.Visible=true;
 			btnEditar.Visible=true;
-			btnEliminar.Visible=true;
+			btnEliminar.Visible=false;
 			btnCancelar.Visible=false;
 			grbDatos.Visible=false;
 			
@@ -229,7 +230,7 @@ namespace agregarClientes
 			
 			btnAñadir.Visible=true;
 			btnEditar.Visible=true;
-			btnEliminar.Visible=true;
+			btnEliminar.Visible=false;
 			btnCancelar.Visible=false;
 			grbDatos.Visible=false;
 			txtBuscar.Focus();

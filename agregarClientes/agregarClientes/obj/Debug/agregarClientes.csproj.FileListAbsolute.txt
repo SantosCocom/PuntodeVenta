@@ -1,0 +1,8 @@
+C:\Users\MIKE\Documents\SharpDevelop Projects\agregarClientes\agregarClientes\bin\Debug\agregarClientes.exe.config
+C:\Users\MIKE\Documents\SharpDevelop Projects\agregarClientes\agregarClientes\bin\Debug\agregarClientes.exe
+C:\Users\MIKE\Documents\SharpDevelop Projects\agregarClientes\agregarClientes\bin\Debug\agregarClientes.pdb
+C:\Users\MIKE\Documents\SharpDevelop Projects\agregarClientes\agregarClientes\obj\Debug\agregarClientes.csprojResolveAssemblyReference.cache
+C:\Users\MIKE\Documents\SharpDevelop Projects\agregarClientes\agregarClientes\obj\Debug\agregarClientes.FormAgregarCliente.resources
+C:\Users\MIKE\Documents\SharpDevelop Projects\agregarClientes\agregarClientes\obj\Debug\agregarClientes.csproj.GenerateResource.Cache
+C:\Users\MIKE\Documents\SharpDevelop Projects\agregarClientes\agregarClientes\obj\Debug\agregarClientes.exe
+C:\Users\MIKE\Documents\SharpDevelop Projects\agregarClientes\agregarClientes\obj\Debug\agregarClientes.pdb

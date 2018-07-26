@@ -32,8 +32,10 @@ namespace NovedadesLirio
 			
 			
 			for (int i = 0; i < filas; i++)
-			{
-				string valor=dgv[0,i].Value.ToString();
+			{	
+			
+				
+				string valor=dgv[4,i].Value.ToString();
 				
 				sum=sum+Convert.ToDouble(valor);
 				

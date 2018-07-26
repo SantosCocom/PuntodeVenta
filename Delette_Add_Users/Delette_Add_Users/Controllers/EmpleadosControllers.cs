@@ -65,12 +65,12 @@ namespace Delette_Add_Users.Controllers
 		}
 		public void ActualizarEmpleado(string nom, string ap, string am, string loc, string dir, string tel, string pk)
 		{
-			string sql= string.Format("UPDATE empleados SET Nombre='{0}',Apellido_paterno='{1}',Apellido_materno='{2}',Localidad='{3}',Direccion='{4}',Telefono='{5}' WHERE Id_empleado ='{6}';",nom,ap,am,loc,dir,tel,pk);
+			string sql= string.Format("UPDATE empleados SET Nombre='{1}',Apellido_paterno='{2}',Apellido_materno='{3}',Localidad='{4}',Direccion='{5}',Telefono='{6}' WHERE Id_empleado ='{0}';",pk,nom,ap,am,loc,dir,tel);
 			FrameBD.SQLIDU(sql);
 		}
 		public void ActualizarUsuario(string user, string pass, string rool, string pk)
 		{
-			string sql= string.Format("UPDATE usuarios SET Usuario='{0}',Password='{1}',Rol='{2}' WHERE Id_empleado='{3}';",user,pass,rool,pk);
+			string sql= string.Format("UPDATE usuarios SET Usuario='{1}',Password='{2}',Rol='{3}' WHERE Id_empleado='{0}';",pk,user,pass,rool);
 			FrameBD.SQLIDU(sql);
 		
 		}

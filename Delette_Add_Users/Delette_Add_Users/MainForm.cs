@@ -102,7 +102,23 @@ namespace Delette_Add_Users
 			txtCurpUser.Text=curp;
 			
 			oEmpleados.InsertarUsuario();
-			oEmpleados.BuscarEmpleado(txtBuscar.Text,dgvEmpleados);//Actualiza el datagrid 
+			oEmpleados.BuscarEmpleado(txtBuscar.Text,dgvEmpleados);//Actualiza el datagrid
+			oEmpleados.BuscarUsuario(txtBuscar.Text, dgvUsuarios);//Actualiza el datagrid de users
+			
+			txtCurp.Clear();
+			txtNombre.Clear();
+			txtApellidoP.Clear();
+			txtApellidoM.Clear();
+			txtLocalidad.Clear();
+			txtDireccion.Clear();
+			txtTelefono.Clear();
+			
+			txtCurpUser.Clear();
+			txtUser.Clear();
+			txtPassword.Clear();
+			txtRol.Clear();
+			
+			txtCurp.Focus();
 		}
 		void BtnEliminarClick(object sender, EventArgs e)
 		{
@@ -117,7 +133,7 @@ namespace Delette_Add_Users
 		void BtnModificarUserClick(object sender, EventArgs e)
 		{
 			oEmpleados.ActualizarEmpleado(txtCurp.Text,txtNombre.Text,txtApellidoP.Text,txtApellidoM.Text,txtLocalidad.Text,txtDireccion.Text,txtTelefono.Text);
-			oEmpleados.ActualizarUsuario(txtCurpUser.Text, txtUser.Text, txtPassword.Text, txtRol.Text);
+			oEmpleados.ActualizarUsuario(txtCurpUser.Text,txtUser.Text, txtPassword.Text, txtRol.Text);
 			oEmpleados.BuscarEmpleado(txtBuscar.Text,dgvEmpleados);//Actualiza el datagrid de empleados
 			oEmpleados.BuscarUsuario(txtBuscar.Text, dgvUsuarios);//Actualiza el datagrid de usuarios
 			
@@ -134,7 +150,8 @@ namespace Delette_Add_Users
 			txtPassword.Clear();
 			txtRol.Clear();
 			
-			btnModificar.Visible=false;
+			btnModificar.Visible=true;
+			btnModificarUser.Visible=false;
 		}
 		
 		

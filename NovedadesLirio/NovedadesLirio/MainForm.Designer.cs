@@ -14,7 +14,7 @@ namespace NovedadesLirio
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox txtEmpleado;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtClave;
 		private System.Windows.Forms.Label label2;
@@ -22,18 +22,13 @@ namespace NovedadesLirio
 		private System.Windows.Forms.Label lvlResultado;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.DataGridView dgvProductos;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button btnTerminar;
 		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button btnAgregar;
 		private System.Windows.Forms.DataGridViewTextBoxColumn producto;
 		private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
-<<<<<<< HEAD
 		private System.Windows.Forms.DataGridViewTextBoxColumn Clave;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Total;
-=======
-		private System.Windows.Forms.Label label4;
->>>>>>> d75eca9cd05173c142dd187cbf5278edf90dc29b
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -56,51 +51,40 @@ namespace NovedadesLirio
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.txtEmpleado = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
-			this.txtClave = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.lvlResultado = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.dgvProductos = new System.Windows.Forms.DataGridView();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.btnAgregar = new System.Windows.Forms.Button();
-<<<<<<< HEAD
 			this.Clave = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-=======
-			this.label4 = new System.Windows.Forms.Label();
->>>>>>> d75eca9cd05173c142dd187cbf5278edf90dc29b
+			this.btnTerminar = new System.Windows.Forms.Button();
+			this.button2 = new System.Windows.Forms.Button();
+			this.txtClave = new System.Windows.Forms.TextBox();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// textBox1
+			// txtEmpleado
 			// 
-			this.textBox1.Location = new System.Drawing.Point(84, 12);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(202, 20);
-			this.textBox1.TabIndex = 0;
+			this.txtEmpleado.Enabled = false;
+			this.txtEmpleado.Location = new System.Drawing.Point(99, 10);
+			this.txtEmpleado.Name = "txtEmpleado";
+			this.txtEmpleado.Size = new System.Drawing.Size(202, 20);
+			this.txtEmpleado.TabIndex = 0;
 			// 
 			// label1
 			// 
 			this.label1.Location = new System.Drawing.Point(22, 13);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(56, 23);
+			this.label1.Size = new System.Drawing.Size(62, 23);
 			this.label1.TabIndex = 1;
-			this.label1.Text = "Empleado";
-			// 
-			// txtClave
-			// 
-			this.txtClave.Location = new System.Drawing.Point(113, 48);
-			this.txtClave.Name = "txtClave";
-			this.txtClave.Size = new System.Drawing.Size(126, 20);
-			this.txtClave.TabIndex = 3;
+			this.label1.Text = "Bienvenido";
 			// 
 			// label2
 			// 
@@ -117,7 +101,7 @@ namespace NovedadesLirio
 			this.groupBox1.Controls.Add(this.dgvProductos);
 			this.groupBox1.Location = new System.Drawing.Point(22, 73);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(681, 209);
+			this.groupBox1.Size = new System.Drawing.Size(559, 209);
 			this.groupBox1.TabIndex = 5;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Carrito";
@@ -151,39 +135,10 @@ namespace NovedadesLirio
 			this.dgvProductos.Location = new System.Drawing.Point(12, 19);
 			this.dgvProductos.Name = "dgvProductos";
 			this.dgvProductos.ReadOnly = true;
-			this.dgvProductos.Size = new System.Drawing.Size(616, 159);
+			this.dgvProductos.Size = new System.Drawing.Size(544, 159);
 			this.dgvProductos.TabIndex = 0;
 			this.dgvProductos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DgvProductosKeyDown);
 			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(393, 288);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(104, 23);
-			this.button1.TabIndex = 6;
-			this.button1.Text = "Completar venta";
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// button2
-			// 
-			this.button2.Location = new System.Drawing.Point(22, 288);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(75, 23);
-			this.button2.TabIndex = 7;
-			this.button2.Text = "Cancelar";
-			this.button2.UseVisualStyleBackColor = true;
-			// 
-			// btnAgregar
-			// 
-			this.btnAgregar.Location = new System.Drawing.Point(248, 288);
-			this.btnAgregar.Name = "btnAgregar";
-			this.btnAgregar.Size = new System.Drawing.Size(105, 23);
-			this.btnAgregar.TabIndex = 8;
-			this.btnAgregar.Text = "Agregar a carrito";
-			this.btnAgregar.UseVisualStyleBackColor = true;
-			this.btnAgregar.Click += new System.EventHandler(this.BtnAgregarClick);
-			// 
-<<<<<<< HEAD
 			// Clave
 			// 
 			this.Clave.HeaderText = "Clave";
@@ -213,32 +168,49 @@ namespace NovedadesLirio
 			this.Total.HeaderText = "Total";
 			this.Total.Name = "Total";
 			this.Total.ReadOnly = true;
-=======
-			// label4
 			// 
-			this.label4.Location = new System.Drawing.Point(46, 175);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(100, 23);
-			this.label4.TabIndex = 9;
-			this.label4.Text = "label4";
->>>>>>> d75eca9cd05173c142dd187cbf5278edf90dc29b
+			// btnTerminar
+			// 
+			this.btnTerminar.Location = new System.Drawing.Point(393, 288);
+			this.btnTerminar.Name = "btnTerminar";
+			this.btnTerminar.Size = new System.Drawing.Size(104, 23);
+			this.btnTerminar.TabIndex = 6;
+			this.btnTerminar.Text = "Completar venta";
+			this.btnTerminar.UseVisualStyleBackColor = true;
+			this.btnTerminar.Click += new System.EventHandler(this.BtnTerminarClick);
+			// 
+			// button2
+			// 
+			this.button2.Location = new System.Drawing.Point(22, 288);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(75, 23);
+			this.button2.TabIndex = 7;
+			this.button2.Text = "Cancelar";
+			this.button2.UseVisualStyleBackColor = true;
+			// 
+			// txtClave
+			// 
+			this.txtClave.Location = new System.Drawing.Point(113, 47);
+			this.txtClave.Name = "txtClave";
+			this.txtClave.Size = new System.Drawing.Size(126, 20);
+			this.txtClave.TabIndex = 9;
+			this.txtClave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtClaveKeyPress);
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(746, 323);
-			this.Controls.Add(this.label4);
-			this.Controls.Add(this.btnAgregar);
+			this.Controls.Add(this.txtClave);
 			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
+			this.Controls.Add(this.btnTerminar);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.txtClave);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.txtEmpleado);
 			this.Name = "MainForm";
 			this.Text = "NovedadesLirio";
+			this.Load += new System.EventHandler(this.MainFormLoad);
 			this.groupBox1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
 			this.ResumeLayout(false);

@@ -40,10 +40,28 @@ namespace NovedadesLirio
 				sum=sum+Convert.ToDouble(valor);
 				
 			}
-			lvl.Text=Convert.ToString(sum/filas);
+			lvl.Text=Convert.ToString(sum);
 			
 		}
 		
+		
+		public void cambiar(DataGridView dgv)
+		{
+			int filas = dgv.RowCount;
+			
+			
+			
+			
+			for (int i = 0; i < filas; i++)
+			{	
+				string clave=dgv[0,i].Value.ToString();
+				string sqlchange=string.Format("UPDATE productos SET vendido = 1 WHERE id_producto={0}",clave);
+				FrameBD.SQLIDU(sqlchange);
+				
+			}
+			
+			
+		}
 		
 		
 		

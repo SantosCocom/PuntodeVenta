@@ -24,6 +24,8 @@ namespace Delette_Add_Users
 		private System.Windows.Forms.PictureBox btnCerrar;
 		private System.Windows.Forms.PictureBox btnMinimizar;
 		private System.Windows.Forms.PictureBox pictureBox3;
+		private System.Windows.Forms.PictureBox pictureBox4;
+		private System.Windows.Forms.PictureBox pictureBox5;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -57,12 +59,16 @@ namespace Delette_Add_Users
 			this.btnAcceder = new System.Windows.Forms.Button();
 			this.btnCerrar = new System.Windows.Forms.PictureBox();
 			this.btnMinimizar = new System.Windows.Forms.PictureBox();
+			this.pictureBox4 = new System.Windows.Forms.PictureBox();
+			this.pictureBox5 = new System.Windows.Forms.PictureBox();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -78,7 +84,7 @@ namespace Delette_Add_Users
 			// pictureBox3
 			// 
 			this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-			this.pictureBox3.Location = new System.Drawing.Point(29, 70);
+			this.pictureBox3.Location = new System.Drawing.Point(25, 70);
 			this.pictureBox3.Name = "pictureBox3";
 			this.pictureBox3.Size = new System.Drawing.Size(193, 178);
 			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -103,11 +109,11 @@ namespace Delette_Add_Users
 			// 
 			this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.DimGray;
-			this.label1.Location = new System.Drawing.Point(457, 9);
+			this.label1.Location = new System.Drawing.Point(323, 9);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(100, 37);
+			this.label1.Size = new System.Drawing.Size(352, 37);
 			this.label1.TabIndex = 3;
-			this.label1.Text = "Login";
+			this.label1.Text = "Welcome to SupliesVentas";
 			// 
 			// pictureBox1
 			// 
@@ -164,9 +170,9 @@ namespace Delette_Add_Users
 			// btnCerrar
 			// 
 			this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-			this.btnCerrar.Location = new System.Drawing.Point(763, 9);
+			this.btnCerrar.Location = new System.Drawing.Point(734, 9);
 			this.btnCerrar.Name = "btnCerrar";
-			this.btnCerrar.Size = new System.Drawing.Size(15, 15);
+			this.btnCerrar.Size = new System.Drawing.Size(34, 28);
 			this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.btnCerrar.TabIndex = 8;
 			this.btnCerrar.TabStop = false;
@@ -175,13 +181,33 @@ namespace Delette_Add_Users
 			// btnMinimizar
 			// 
 			this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-			this.btnMinimizar.Location = new System.Drawing.Point(742, 9);
+			this.btnMinimizar.Location = new System.Drawing.Point(694, 9);
 			this.btnMinimizar.Name = "btnMinimizar";
-			this.btnMinimizar.Size = new System.Drawing.Size(15, 15);
+			this.btnMinimizar.Size = new System.Drawing.Size(34, 28);
 			this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.btnMinimizar.TabIndex = 9;
 			this.btnMinimizar.TabStop = false;
 			this.btnMinimizar.Click += new System.EventHandler(this.BtnMinimizarClick);
+			// 
+			// pictureBox4
+			// 
+			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+			this.pictureBox4.Location = new System.Drawing.Point(256, 108);
+			this.pictureBox4.Name = "pictureBox4";
+			this.pictureBox4.Size = new System.Drawing.Size(39, 34);
+			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox4.TabIndex = 10;
+			this.pictureBox4.TabStop = false;
+			// 
+			// pictureBox5
+			// 
+			this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+			this.pictureBox5.Location = new System.Drawing.Point(256, 183);
+			this.pictureBox5.Name = "pictureBox5";
+			this.pictureBox5.Size = new System.Drawing.Size(39, 33);
+			this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox5.TabIndex = 11;
+			this.pictureBox5.TabStop = false;
 			// 
 			// FormLogin
 			// 
@@ -189,6 +215,8 @@ namespace Delette_Add_Users
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
 			this.ClientSize = new System.Drawing.Size(780, 330);
+			this.Controls.Add(this.pictureBox5);
+			this.Controls.Add(this.pictureBox4);
 			this.Controls.Add(this.btnMinimizar);
 			this.Controls.Add(this.btnCerrar);
 			this.Controls.Add(this.btnAcceder);
@@ -208,6 +236,8 @@ namespace Delette_Add_Users
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

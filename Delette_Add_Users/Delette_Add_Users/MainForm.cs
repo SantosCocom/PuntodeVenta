@@ -12,6 +12,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using AccesoADatos;
 using Delette_Add_Users.Controllers;
+using Herramientas;
 
 
 namespace Delette_Add_Users
@@ -155,13 +156,50 @@ namespace Delette_Add_Users
 			btnEliminar.Enabled=true;
 			
 		}
-		
-		
-		
-		
-		
-		
-		
+		void TxtBuscarKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar=Validaciones.valida("T",e.KeyChar);
+		}
+		void TxtCurpKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar=Validaciones.valida("U",e.KeyChar);
+		}
+		void TxtNombreKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar=Validaciones.valida("T",e.KeyChar);
+		}
+		void TxtApellidoPKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar=Validaciones.valida("T",e.KeyChar);
+		}
+		void TxtApellidoMKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar=Validaciones.valida("T",e.KeyChar);
+		}
+		void TxtLocalidadKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar=Validaciones.valida("T",e.KeyChar);
+		}
+		void TxtDireccionKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar=Validaciones.valida("U",e.KeyChar);
+		}
+		void TxtTelefonoKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar=Validaciones.valida("N",e.KeyChar);
+		}
+		void TxtUserKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar=Validaciones.valida("U",e.KeyChar);
+		}
+		void TxtPasswordKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar=Validaciones.valida("U",e.KeyChar);
+		}
+		void TxtRolKeyPress(object sender, KeyPressEventArgs e)
+		{
+			e.KeyChar=Validaciones.valida("T",e.KeyChar);
+		}
 		
 		
 		

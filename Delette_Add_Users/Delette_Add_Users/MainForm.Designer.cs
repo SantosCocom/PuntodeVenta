@@ -44,6 +44,7 @@ namespace Delette_Add_Users
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.TextBox txtRol;
 		private System.Windows.Forms.Label label11;
+		private System.Windows.Forms.ErrorProvider epError;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -66,6 +67,7 @@ namespace Delette_Add_Users
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.gpbEmpleados = new System.Windows.Forms.GroupBox();
 			this.txtRol = new System.Windows.Forms.TextBox();
 			this.label11 = new System.Windows.Forms.Label();
@@ -96,8 +98,10 @@ namespace Delette_Add_Users
 			this.btnAgregarUser = new System.Windows.Forms.Button();
 			this.btnModificarUser = new System.Windows.Forms.Button();
 			this.btnCancelar = new System.Windows.Forms.Button();
+			this.epError = new System.Windows.Forms.ErrorProvider(this.components);
 			this.gpbEmpleados.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.epError)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// gpbEmpleados
@@ -124,7 +128,7 @@ namespace Delette_Add_Users
 			this.gpbEmpleados.Controls.Add(this.label1);
 			this.gpbEmpleados.Location = new System.Drawing.Point(20, 46);
 			this.gpbEmpleados.Name = "gpbEmpleados";
-			this.gpbEmpleados.Size = new System.Drawing.Size(332, 414);
+			this.gpbEmpleados.Size = new System.Drawing.Size(347, 414);
 			this.gpbEmpleados.TabIndex = 0;
 			this.gpbEmpleados.TabStop = false;
 			this.gpbEmpleados.Text = "Datos del Empleado";
@@ -132,9 +136,11 @@ namespace Delette_Add_Users
 			// txtRol
 			// 
 			this.txtRol.Location = new System.Drawing.Point(116, 373);
+			this.txtRol.MaxLength = 60;
 			this.txtRol.Name = "txtRol";
 			this.txtRol.Size = new System.Drawing.Size(196, 20);
-			this.txtRol.TabIndex = 5;
+			this.txtRol.TabIndex = 10;
+			this.txtRol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtRolKeyPress);
 			// 
 			// label11
 			// 
@@ -147,9 +153,11 @@ namespace Delette_Add_Users
 			// txtLocalidad
 			// 
 			this.txtLocalidad.Location = new System.Drawing.Point(118, 180);
+			this.txtLocalidad.MaxLength = 60;
 			this.txtLocalidad.Name = "txtLocalidad";
 			this.txtLocalidad.Size = new System.Drawing.Size(196, 20);
-			this.txtLocalidad.TabIndex = 15;
+			this.txtLocalidad.TabIndex = 5;
+			this.txtLocalidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtLocalidadKeyPress);
 			// 
 			// label12
 			// 
@@ -162,9 +170,11 @@ namespace Delette_Add_Users
 			// txtPassword
 			// 
 			this.txtPassword.Location = new System.Drawing.Point(116, 334);
+			this.txtPassword.MaxLength = 60;
 			this.txtPassword.Name = "txtPassword";
 			this.txtPassword.Size = new System.Drawing.Size(196, 20);
-			this.txtPassword.TabIndex = 3;
+			this.txtPassword.TabIndex = 9;
+			this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtPasswordKeyPress);
 			// 
 			// label9
 			// 
@@ -177,9 +187,11 @@ namespace Delette_Add_Users
 			// txtDireccion
 			// 
 			this.txtDireccion.Location = new System.Drawing.Point(118, 217);
+			this.txtDireccion.MaxLength = 60;
 			this.txtDireccion.Name = "txtDireccion";
 			this.txtDireccion.Size = new System.Drawing.Size(196, 20);
-			this.txtDireccion.TabIndex = 13;
+			this.txtDireccion.TabIndex = 6;
+			this.txtDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDireccionKeyPress);
 			// 
 			// label5
 			// 
@@ -192,9 +204,11 @@ namespace Delette_Add_Users
 			// txtUser
 			// 
 			this.txtUser.Location = new System.Drawing.Point(116, 296);
+			this.txtUser.MaxLength = 60;
 			this.txtUser.Name = "txtUser";
 			this.txtUser.Size = new System.Drawing.Size(196, 20);
-			this.txtUser.TabIndex = 1;
+			this.txtUser.TabIndex = 8;
+			this.txtUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtUserKeyPress);
 			// 
 			// label8
 			// 
@@ -207,9 +221,11 @@ namespace Delette_Add_Users
 			// txtTelefono
 			// 
 			this.txtTelefono.Location = new System.Drawing.Point(118, 256);
+			this.txtTelefono.MaxLength = 10;
 			this.txtTelefono.Name = "txtTelefono";
 			this.txtTelefono.Size = new System.Drawing.Size(196, 20);
-			this.txtTelefono.TabIndex = 11;
+			this.txtTelefono.TabIndex = 7;
+			this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtTelefonoKeyPress);
 			// 
 			// label6
 			// 
@@ -222,9 +238,11 @@ namespace Delette_Add_Users
 			// txtApellidoM
 			// 
 			this.txtApellidoM.Location = new System.Drawing.Point(118, 139);
+			this.txtApellidoM.MaxLength = 60;
 			this.txtApellidoM.Name = "txtApellidoM";
 			this.txtApellidoM.Size = new System.Drawing.Size(196, 20);
-			this.txtApellidoM.TabIndex = 7;
+			this.txtApellidoM.TabIndex = 4;
+			this.txtApellidoM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtApellidoMKeyPress);
 			// 
 			// label4
 			// 
@@ -237,9 +255,11 @@ namespace Delette_Add_Users
 			// txtApellidoP
 			// 
 			this.txtApellidoP.Location = new System.Drawing.Point(118, 98);
+			this.txtApellidoP.MaxLength = 60;
 			this.txtApellidoP.Name = "txtApellidoP";
 			this.txtApellidoP.Size = new System.Drawing.Size(196, 20);
-			this.txtApellidoP.TabIndex = 5;
+			this.txtApellidoP.TabIndex = 3;
+			this.txtApellidoP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtApellidoPKeyPress);
 			// 
 			// label3
 			// 
@@ -252,9 +272,11 @@ namespace Delette_Add_Users
 			// txtNombre
 			// 
 			this.txtNombre.Location = new System.Drawing.Point(118, 66);
+			this.txtNombre.MaxLength = 60;
 			this.txtNombre.Name = "txtNombre";
 			this.txtNombre.Size = new System.Drawing.Size(196, 20);
-			this.txtNombre.TabIndex = 3;
+			this.txtNombre.TabIndex = 2;
+			this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNombreKeyPress);
 			// 
 			// label2
 			// 
@@ -267,9 +289,11 @@ namespace Delette_Add_Users
 			// txtCurp
 			// 
 			this.txtCurp.Location = new System.Drawing.Point(118, 27);
+			this.txtCurp.MaxLength = 18;
 			this.txtCurp.Name = "txtCurp";
 			this.txtCurp.Size = new System.Drawing.Size(196, 20);
 			this.txtCurp.TabIndex = 1;
+			this.txtCurp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCurpKeyPress);
 			// 
 			// label1
 			// 
@@ -333,22 +357,24 @@ namespace Delette_Add_Users
 			this.txtBuscar.Location = new System.Drawing.Point(446, 6);
 			this.txtBuscar.Name = "txtBuscar";
 			this.txtBuscar.Size = new System.Drawing.Size(373, 20);
-			this.txtBuscar.TabIndex = 7;
+			this.txtBuscar.TabIndex = 11;
 			this.txtBuscar.TextChanged += new System.EventHandler(this.TxtBuscarTextChanged);
+			this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBuscarKeyPress);
 			// 
 			// btnAgregarUser
 			// 
-			this.btnAgregarUser.Location = new System.Drawing.Point(388, 469);
+			this.btnAgregarUser.Location = new System.Drawing.Point(388, 449);
 			this.btnAgregarUser.Name = "btnAgregarUser";
 			this.btnAgregarUser.Size = new System.Drawing.Size(75, 23);
 			this.btnAgregarUser.TabIndex = 8;
 			this.btnAgregarUser.Text = "AgregarUser";
 			this.btnAgregarUser.UseVisualStyleBackColor = true;
 			this.btnAgregarUser.Click += new System.EventHandler(this.BtnAgregarUserClick);
+			
 			// 
 			// btnModificarUser
 			// 
-			this.btnModificarUser.Location = new System.Drawing.Point(516, 469);
+			this.btnModificarUser.Location = new System.Drawing.Point(516, 449);
 			this.btnModificarUser.Name = "btnModificarUser";
 			this.btnModificarUser.Size = new System.Drawing.Size(75, 23);
 			this.btnModificarUser.TabIndex = 9;
@@ -364,6 +390,10 @@ namespace Delette_Add_Users
 			this.btnCancelar.TabIndex = 10;
 			this.btnCancelar.Text = "Cancelar";
 			this.btnCancelar.UseVisualStyleBackColor = true;
+			// 
+			// epError
+			// 
+			this.epError.ContainerControl = this;
 			// 
 			// FormUsuarios
 			// 
@@ -387,6 +417,7 @@ namespace Delette_Add_Users
 			this.gpbEmpleados.ResumeLayout(false);
 			this.gpbEmpleados.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.epError)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

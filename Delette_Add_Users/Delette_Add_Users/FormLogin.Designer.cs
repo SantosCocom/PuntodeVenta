@@ -98,6 +98,7 @@ namespace Delette_Add_Users
 			this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtUsuario.ForeColor = System.Drawing.Color.DimGray;
 			this.txtUsuario.Location = new System.Drawing.Point(301, 109);
+			this.txtUsuario.MaxLength = 60;
 			this.txtUsuario.Name = "txtUsuario";
 			this.txtUsuario.Size = new System.Drawing.Size(427, 20);
 			this.txtUsuario.TabIndex = 1;
@@ -144,9 +145,10 @@ namespace Delette_Add_Users
 			this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtPassword.ForeColor = System.Drawing.Color.DimGray;
 			this.txtPassword.Location = new System.Drawing.Point(301, 183);
+			this.txtPassword.MaxLength = 60;
 			this.txtPassword.Name = "txtPassword";
 			this.txtPassword.Size = new System.Drawing.Size(427, 20);
-			this.txtPassword.TabIndex = 5;
+			this.txtPassword.TabIndex = 2;
 			this.txtPassword.Text = "Contraseña";
 			this.txtPassword.Enter += new System.EventHandler(this.TxtPasswordEnter);
 			this.txtPassword.Leave += new System.EventHandler(this.TxtPasswordLeave);
@@ -162,7 +164,7 @@ namespace Delette_Add_Users
 			this.btnAcceder.Location = new System.Drawing.Point(304, 248);
 			this.btnAcceder.Name = "btnAcceder";
 			this.btnAcceder.Size = new System.Drawing.Size(424, 40);
-			this.btnAcceder.TabIndex = 7;
+			this.btnAcceder.TabIndex = 3;
 			this.btnAcceder.Text = "ACCEDER";
 			this.btnAcceder.UseVisualStyleBackColor = false;
 			this.btnAcceder.Click += new System.EventHandler(this.BtnAccederClick);

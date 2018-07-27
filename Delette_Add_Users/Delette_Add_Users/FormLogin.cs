@@ -73,13 +73,13 @@ namespace Delette_Add_Users
 		void BtnAccederClick(object sender, EventArgs e)
 		{
 			string condicion = String.Format("Usuario='{0}'",txtUsuario.Text);
-			string [] datos = FrameBD.ObtieneCampos("usuarios",condicion,"Usuario,Password,Rol");
+			string [] datos = FrameBD.ObtieneCampos("empleados",condicion,"Id_empleado,Nombre,Apellido_paterno,Apellido_materno,Localidad,Direccion,Telefono,Usuario,Password,Rol,Despedido");
 			
 			if (datos.Length>1) 
 			{
-				if (datos[1]==txtPassword.Text)
+				if (datos[8]==txtPassword.Text)
 				{
-					MessageBox.Show("Bienvenido "+datos[2]);
+					MessageBox.Show("Bienvenido "+datos[9]);
 				}else
 					MessageBox.Show("La contraseña es incorrecta");
 			}else

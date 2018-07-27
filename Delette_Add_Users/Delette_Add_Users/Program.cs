@@ -24,7 +24,7 @@ namespace Delette_Add_Users
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FormUsuarios());
+			Application.Run(new FormLogin());
 		}
 		
 	}

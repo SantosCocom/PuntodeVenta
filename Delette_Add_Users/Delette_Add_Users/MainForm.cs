@@ -38,30 +38,27 @@ namespace Delette_Add_Users
 			btnAgregarUser.Visible=false;
 			btnModificarUser.Visible=false;
 			oEmpleados.BuscarEmpleado(txtBuscar.Text, dgvEmpleados);
-			oEmpleados.BuscarUsuario(txtBuscar.Text, dgvUsuarios);//Actualiza el datagrid de usuarios
 			gpbEmpleados.Enabled=false;
-			gpbUsuarios.Enabled=false;
 		}
 		void BtnAgregarClick(object sender, EventArgs e)
 		{
-			btnAgregar.Visible=false;
-			btnModificar.Enabled=false;
-			btnEliminar.Enabled=false;
-			btnModificarUser.Visible=false;
-			btnAgregarUser.Visible=true;
-			gpbEmpleados.Enabled=true;
-			gpbUsuarios.Enabled=true;
+			btnAgregar.Visible=false;//Boton solo para llamar el groupbox se queda oculto
+			btnAgregarUser.Visible=true;//Boton que hara la accion de agregar se queda visible
+			btnModificar.Enabled=false;//Se bloquea el boton de modificar
+			btnEliminar.Enabled=false;//Se bloquea el boton de eliminar
+			btnModificarUser.Visible=false;//Se oculta el 2 boton de modificar
+			
+			gpbEmpleados.Enabled=true;//Se habilita el groupbox para poder agregar datos
 		}
 		void BtnModificarClick(object sender, EventArgs e)
 		{
-			btnModificar.Visible=false;
-			btnModificarUser.Visible=true;
-			gpbUsuarios.Visible=true;
-			btnAgregar.Enabled=false;
-			btnEliminar.Enabled=false;
-			gpbUsuarios.Enabled=true;
-			gpbEmpleados.Enabled=true;
+			btnModificar.Visible=false;//El primer boton de modificar se oculta
+			btnModificarUser.Visible=true;//El segundo boton de modificar se activa
+			btnAgregar.Enabled=false;//Se bloquea el boton de agregar
+			btnEliminar.Enabled=false;//Se bloquea el boton de eliminar
+			gpbEmpleados.Enabled=true;//Se activa el gruopbox para llenar datos
 			
+			//JALAMOS LOS DATOS DEL DATAGRID A LOS CAMPOS PARA QUE LOS PUEDA EDITAR
 			txtCurp.Text = dgvEmpleados[0,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
 			txtNombre.Text = dgvEmpleados[1,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
 			txtApellidoP.Text = dgvEmpleados[2,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
@@ -69,19 +66,18 @@ namespace Delette_Add_Users
 			txtLocalidad.Text = dgvEmpleados[4,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
 			txtDireccion.Text = dgvEmpleados[5,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
 			txtTelefono.Text = dgvEmpleados[6,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
-			
-			txtUser.Text = dgvUsuarios[0,dgvUsuarios.CurrentCellAddress.Y].Value.ToString();
-			txtPassword.Text = dgvUsuarios[1,dgvUsuarios.CurrentCellAddress.Y].Value.ToString();
-			txtRol.Text = dgvUsuarios[2,dgvUsuarios.CurrentCellAddress.Y].Value.ToString();
-			txtCurpUser.Text = dgvUsuarios[3,dgvUsuarios.CurrentCellAddress.Y].Value.ToString();
+			txtUser.Text = dgvEmpleados[7,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
+			txtPassword.Text = dgvEmpleados[8,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
+			txtRol.Text = dgvEmpleados[9,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
 			
 		}
 		void TxtBuscarTextChanged(object sender, EventArgs e)
 		{
-			oEmpleados.BuscarEmpleado(txtBuscar.Text,dgvEmpleados);
+			oEmpleados.BuscarEmpleado(txtBuscar.Text,dgvEmpleados);//Mostrar los datos en el datagrid
 		}
 		void BtnAgregarUserClick(object sender, EventArgs e)
 		{
+			//SE CARGAN LO QUE SE INGRESO PARA PODER MANDARLO A INSERSION
 			oEmpleados.Id_empleado=txtCurp.Text;
 			oEmpleados.Nombre=txtNombre.Text;
 			oEmpleados.Apellido_paterno=txtApellidoP.Text;
@@ -89,22 +85,15 @@ namespace Delette_Add_Users
 			oEmpleados.Localidad=txtLocalidad.Text;
 			oEmpleados.Direccion=txtDireccion.Text;
 			oEmpleados.Telefono=txtTelefono.Text;
-			
-			
 			oEmpleados.Usuario=txtUser.Text;
 			oEmpleados.Password=txtPassword.Text;
 			oEmpleados.Rol=txtRol.Text;
 			
 			oEmpleados.InsertarEmpleado();
 			
-			string curp=txtCurp.Text;
-			
-			txtCurpUser.Text=curp;
-			
-			oEmpleados.InsertarUsuario();
 			oEmpleados.BuscarEmpleado(txtBuscar.Text,dgvEmpleados);//Actualiza el datagrid
-			oEmpleados.BuscarUsuario(txtBuscar.Text, dgvUsuarios);//Actualiza el datagrid de users
 			
+			//SE LIMPIAN LOS TEXTBOXS
 			txtCurp.Clear();
 			txtNombre.Clear();
 			txtApellidoP.Clear();
@@ -112,30 +101,41 @@ namespace Delette_Add_Users
 			txtLocalidad.Clear();
 			txtDireccion.Clear();
 			txtTelefono.Clear();
-			
-			txtCurpUser.Clear();
 			txtUser.Clear();
 			txtPassword.Clear();
 			txtRol.Clear();
-			
 			txtCurp.Focus();
+			
+			gpbEmpleados.Enabled=false;
+			
+			btnAgregar.Visible=true;
+			btnAgregarUser.Visible=false;
+			btnModificar.Enabled=true;
+			btnModificarUser.Visible=false;
+			btnEliminar.Enabled=true;
 		}
 		void BtnEliminarClick(object sender, EventArgs e)
 		{
 			if (MessageBox.Show("Esta seguro de eliminar","Cuidado",MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation)== DialogResult.Yes) 
 			{
 				string clave = dgvEmpleados[0,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
-				oEmpleados.EliminarEmpleado(clave);
-				oEmpleados.BuscarEmpleado(txtBuscar.Text,dgvEmpleados);//Actualiza el datagridview de los empleados 
+				oEmpleados.EliminarEmpleadoDeLaLista(clave);
+				oEmpleados.BuscarEmpleado(txtBuscar.Text,dgvEmpleados);//Actualiza el datagridview de los empleados
+				
 				
 			}
+			
+			btnAgregar.Enabled=true;
+			btnAgregarUser.Visible=false;
+			btnModificarUser.Visible=false;
+			btnModificar.Enabled=true;
+			btnEliminar.Enabled=true;
+			
 		}
 		void BtnModificarUserClick(object sender, EventArgs e)
 		{
-			oEmpleados.ActualizarEmpleado(txtCurp.Text,txtNombre.Text,txtApellidoP.Text,txtApellidoM.Text,txtLocalidad.Text,txtDireccion.Text,txtTelefono.Text);
-			oEmpleados.ActualizarUsuario(txtCurpUser.Text,txtUser.Text, txtPassword.Text, txtRol.Text);
+			oEmpleados.ActualizarEmpleado(txtNombre.Text,txtApellidoP.Text,txtApellidoM.Text,txtLocalidad.Text,txtDireccion.Text,txtTelefono.Text,txtUser.Text, txtPassword.Text, txtRol.Text,txtCurp.Text);
 			oEmpleados.BuscarEmpleado(txtBuscar.Text,dgvEmpleados);//Actualiza el datagrid de empleados
-			oEmpleados.BuscarUsuario(txtBuscar.Text, dgvUsuarios);//Actualiza el datagrid de usuarios
 			
 			txtCurp.Clear();
 			txtNombre.Clear();
@@ -144,14 +144,16 @@ namespace Delette_Add_Users
 			txtLocalidad.Clear();
 			txtDireccion.Clear();
 			txtTelefono.Clear();
-			
-			txtCurpUser.Clear();
 			txtUser.Clear();
 			txtPassword.Clear();
 			txtRol.Clear();
 			
+			gpbEmpleados.Enabled=false;
 			btnModificar.Visible=true;
 			btnModificarUser.Visible=false;
+			btnAgregar.Enabled=true;
+			btnEliminar.Enabled=true;
+			
 		}
 		
 		

@@ -79,7 +79,14 @@ namespace Delette_Add_Users
 			{
 				if (datos[8]==txtPassword.Text)
 				{
-					MessageBox.Show("Bienvenido "+datos[9]);
+					if (datos[10]=="1")
+					{
+						MessageBox.Show("El usuario " + datos[7]+ " ya esta dado de baja en el sistema");
+					}else
+						if (datos[10]=="0") 
+					{
+						MessageBox.Show("Bienvenido "+datos[9]+ " "+datos[1]);
+						}
 				}else
 					MessageBox.Show("La contraseña es incorrecta");
 			}else

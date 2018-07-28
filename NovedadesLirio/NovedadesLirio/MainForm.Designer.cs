@@ -29,6 +29,7 @@ namespace NovedadesLirio
 		private System.Windows.Forms.DataGridViewTextBoxColumn Clave;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Total;
+		private System.Windows.Forms.TextBox txtFolio;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -66,6 +67,7 @@ namespace NovedadesLirio
 			this.btnTerminar = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.txtClave = new System.Windows.Forms.TextBox();
+			this.txtFolio = new System.Windows.Forms.TextBox();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
 			this.SuspendLayout();
@@ -187,20 +189,30 @@ namespace NovedadesLirio
 			this.button2.TabIndex = 7;
 			this.button2.Text = "Cancelar";
 			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.Button2Click);
 			// 
 			// txtClave
 			// 
-			this.txtClave.Location = new System.Drawing.Point(113, 47);
+			this.txtClave.Location = new System.Drawing.Point(130, 51);
 			this.txtClave.Name = "txtClave";
-			this.txtClave.Size = new System.Drawing.Size(126, 20);
-			this.txtClave.TabIndex = 9;
+			this.txtClave.Size = new System.Drawing.Size(100, 20);
+			this.txtClave.TabIndex = 8;
 			this.txtClave.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtClaveKeyPress);
+			// 
+			// txtFolio
+			// 
+			this.txtFolio.Location = new System.Drawing.Point(423, 13);
+			this.txtFolio.Name = "txtFolio";
+			this.txtFolio.Size = new System.Drawing.Size(100, 20);
+			this.txtFolio.TabIndex = 9;
+			this.txtFolio.Visible = false;
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(746, 323);
+			this.Controls.Add(this.txtFolio);
 			this.Controls.Add(this.txtClave);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.btnTerminar);

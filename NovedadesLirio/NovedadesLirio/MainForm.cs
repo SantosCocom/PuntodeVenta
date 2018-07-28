@@ -26,6 +26,7 @@ namespace NovedadesLirio
 			//
 			InitializeComponent();
 			
+			
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
@@ -48,7 +49,7 @@ namespace NovedadesLirio
 		void TxtClaveKeyPress(object sender, KeyPressEventArgs e)
 		{	
 		
-			  if((int)e.KeyChar == (int)Keys.Enter)
+			 if((int)e.KeyChar == (int)Keys.Enter)
 			  {
 			  	if (txtClave.Text=="" && dgvProductos.RowCount<1) 
 				{
@@ -59,17 +60,23 @@ namespace NovedadesLirio
 			  		
 			  		VentasController poner = new VentasController();
 			
-			string condicion=string.Format("id_producto='{0}'",txtClave.Text);
-			string[] sqls=FrameBD.ObtieneCampos("productos",condicion,"id_producto,nombre,precio,1,precio");
-			
-		
-				dgvProductos.Rows.Add(FrameBD.ObtieneCampos("productos",condicion,"id_producto,nombre,precio,1,precio"));
-			poner.total(dgvProductos,lvlResultado);
-			
-			txtClave.Focus();
-				txtClave.Clear();
-			
+			string condicion=string.Format("id_producto='{0}'",txtClave.Text);	
+			string[] datos= FrameBD.ObtieneCampos("productos",condicion,"id_producto,nombre,precio,1,precio");
+				if (datos.Length>1)
+				{	
+					
+					dgvProductos.Rows.Add(datos);
+					poner.total(dgvProductos,lvlResultado);
+					txtClave.Focus();
+					txtClave.Clear();
+					
+					
+				}else 
+					
 				
+					MessageBox.Show("Producto no disponible");
+					txtClave.Focus();
+					txtClave.Clear();
 			  	}
         
 			  } 
@@ -83,6 +90,8 @@ namespace NovedadesLirio
 		{
 			int num=dgvProductos.RowCount;
 			
+			
+			
 			if (num<1) 
 			{
 				MessageBox.Show("Debe de ingresar productos al carrito");
@@ -92,9 +101,14 @@ namespace NovedadesLirio
 				
 			
 			VentasController vender = new VentasController();
+			string nada = DateTime.Now.ToString("yyyy-MM-dd");
+			txtFolio.Text=vender.genera_clave(10);
 			vender.cambiar(dgvProductos);
-			MessageBox.Show("Producto vendido");
-			dgvProductos.ClearSelection();
+			vender.insertar(dgvProductos,txtFolio,nada,lvlResultado);
+			
+			dgvProductos.Rows.Clear();
+			MessageBox.Show("Venta Exitosa");
+			txtClave.Focus();
 			}
 		}
 		void MainFormLoad(object sender, EventArgs e)
@@ -103,6 +117,14 @@ namespace NovedadesLirio
 			
 			
 		}
+		void Button2Click(object sender, EventArgs e)
+		{
+			FormDetalleVentas MV = new FormDetalleVentas();
+			MV.Show();
+		}
+		
+							
+		
 		
 		
 		

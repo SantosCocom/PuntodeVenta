@@ -7,3 +7,4 @@ C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\ob
 C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.pdb
 C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.Properties.Resources.resources
 C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.csprojResolveAssemblyReference.cache
+C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.FormDetalleVentas.resources

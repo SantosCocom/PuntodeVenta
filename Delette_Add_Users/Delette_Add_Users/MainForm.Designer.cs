@@ -370,7 +370,6 @@ namespace Delette_Add_Users
 			this.btnAgregarUser.Text = "AgregarUser";
 			this.btnAgregarUser.UseVisualStyleBackColor = true;
 			this.btnAgregarUser.Click += new System.EventHandler(this.BtnAgregarUserClick);
-			
 			// 
 			// btnModificarUser
 			// 
@@ -390,6 +389,7 @@ namespace Delette_Add_Users
 			this.btnCancelar.TabIndex = 10;
 			this.btnCancelar.Text = "Cancelar";
 			this.btnCancelar.UseVisualStyleBackColor = true;
+			this.btnCancelar.Click += new System.EventHandler(this.BtnCancelarClick);
 			// 
 			// epError
 			// 

@@ -30,7 +30,7 @@ namespace agregarClientes
 			InitializeComponent();
 			txtBuscar.Focus();
 			
-			grbDatos.Visible=false;
+			grbDatos.Enabled=false;
 			btnGuardar.Visible=false;
 			btnGuardarEdi.Visible=false;
 			btnCancelar.Visible=false;
@@ -59,7 +59,7 @@ namespace agregarClientes
 		
 		void BtnAñadirClick(object sender, EventArgs e)
 		{
-			grbDatos.Visible=true;
+			grbDatos.Enabled=true;
 			btnAñadir.Visible=false;
 			btnEditar.Visible=false;
 			btnEliminar.Visible=false;
@@ -119,7 +119,7 @@ namespace agregarClientes
 			btnEditar.Visible=true;
 			btnEliminar.Visible=false;
 			btnCancelar.Visible=false;
-			grbDatos.Visible=false;
+			grbDatos.Enabled=false;
 			
 			txtBuscar.Focus();
 			}else
@@ -129,7 +129,7 @@ namespace agregarClientes
 		}
 		void BtnEditarClick(object sender, EventArgs e)
 		{
-			grbDatos.Visible=true;
+			grbDatos.Enabled=true;
 			btnAñadir.Visible=false;
 			btnEditar.Visible=false;
 			btnEliminar.Visible=false;
@@ -185,7 +185,7 @@ namespace agregarClientes
 			btnEditar.Visible=true;
 			btnEliminar.Visible=false;
 			btnCancelar.Visible=false;
-			grbDatos.Visible=false;
+			grbDatos.Enabled=false;
 			
 			txtBuscar.Focus();
 			}else
@@ -232,7 +232,7 @@ namespace agregarClientes
 			btnEditar.Visible=true;
 			btnEliminar.Visible=false;
 			btnCancelar.Visible=false;
-			grbDatos.Visible=false;
+			grbDatos.Enabled=false;
 			txtBuscar.Focus();
 			}
 		}

@@ -117,7 +117,7 @@ namespace Delette_Add_Users
 		}
 		void BtnEliminarClick(object sender, EventArgs e)
 		{
-			if (MessageBox.Show("Esta seguro de eliminar","Cuidado",MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation)== DialogResult.Yes) 
+			if (MessageBox.Show("¿Esta seguro de eliminar este usuario?","Cuidado",MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation)== DialogResult.Yes) 
 			{
 				string clave = dgvEmpleados[0,dgvEmpleados.CurrentCellAddress.Y].Value.ToString();
 				oEmpleados.EliminarEmpleadoDeLaLista(clave);

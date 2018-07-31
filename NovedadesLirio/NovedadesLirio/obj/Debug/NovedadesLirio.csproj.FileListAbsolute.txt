@@ -13,3 +13,9 @@ C:\Users\Santos\Documents\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\N
 C:\Users\Santos\Documents\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.csproj.GenerateResource.Cache
 C:\Users\Santos\Documents\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.exe
 C:\Users\Santos\Documents\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.pdb
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.csprojResolveAssemblyReference.cache
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.MainForm.resources
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.Properties.Resources.resources
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.csproj.GenerateResource.Cache
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.exe
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.pdb

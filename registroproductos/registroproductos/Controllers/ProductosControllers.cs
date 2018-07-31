@@ -29,7 +29,7 @@ namespace registroproductos.Controllers
 		
 		public void buscarproducto(string producto,DataGridView dgv)
 		{
-			string sql= "SELECT * FROM productos WHERE nombre LIKE'" + producto + "%'";
+			string sql= "SELECT id_productos as'Clave',Nombre,Precio,Descripcion,Talla,vendido FROM productos WHERE nombre LIKE'" + producto + "%'";
 			
 			dgv.DataSource = FrameBD.SQLSEL(sql);
 			dgv.DataMember = "datos";
@@ -37,21 +37,21 @@ namespace registroproductos.Controllers
 		
 		public void store()
 		{
-			string sql= string.Format("INSERT INTO productos(id_producto,Nombre,Precio,Descripcion,Talla)VALUES('{0}','{1}',{2},'{3}','{4}')",
+			string sql= string.Format("INSERT INTO productos(id_productos,Nombre,Precio,Descripcion,Talla)VALUES('{0}','{1}',{2},'{3}','{4}')",
 			                         id_producto,Nombre,Precio,Descripcion,Talla);
 			FrameBD.SQLIDU(sql);
 		}
 		public void Destroy(string id_producto )
 			
 		{
-			string sql = string.Format("DELETE FROM productos WHERE id_producto='{0}';",id_producto);
+			string sql = string.Format("DELETE FROM productos WHERE id_productos='{0}';",id_producto);
 			FrameBD.SQLIDU(sql);
 		}
 		
 		public void update(string id_producto, string Producto,float Precio,string Descripcion, string Talla)
 		{
 			
-			string sql = string.Format("UPDATE productos SET Nombre='{1}',Precio={2},Descripcion='{3}',Talla='{4}' WHERE id_producto='{0}';",id_producto,Producto,Precio,Descripcion,Talla);
+			string sql = string.Format("UPDATE productos SET Nombre='{1}',Precio={2},Descripcion='{3}',Talla='{4}' WHERE id_productos='{0}';",id_producto,Producto,Precio,Descripcion,Talla);
 			FrameBD.SQLIDU(sql);
 		}
 

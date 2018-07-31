@@ -6,3 +6,14 @@ C:\Users\COMPAX\Documents\SharpDevelop Projects\registroproductos\registroproduc
 C:\Users\COMPAX\Documents\SharpDevelop Projects\registroproductos\registroproductos\bin\Debug\registroproductos.pdb
 C:\Users\COMPAX\Documents\SharpDevelop Projects\registroproductos\registroproductos\obj\Debug\registroproductos.exe
 C:\Users\COMPAX\Documents\SharpDevelop Projects\registroproductos\registroproductos\obj\Debug\registroproductos.pdb
+C:\Users\COMPAX\Desktop\registroproductos\registroproductos\bin\Debug\registroproductos.exe.config
+C:\Users\COMPAX\Desktop\registroproductos\registroproductos\bin\Debug\registroproductos.exe
+C:\Users\COMPAX\Desktop\registroproductos\registroproductos\bin\Debug\registroproductos.pdb
+C:\Users\COMPAX\Desktop\registroproductos\registroproductos\obj\Debug\registroproductos.csprojResolveAssemblyReference.cache
+C:\Users\COMPAX\Desktop\registroproductos\registroproductos\obj\Debug\registroproductos.MainForm.resources
+C:\Users\COMPAX\Desktop\registroproductos\registroproductos\obj\Debug\registroproductos.csproj.GenerateResource.Cache
+C:\Users\COMPAX\Desktop\registroproductos\registroproductos\obj\Debug\registroproductos.exe
+C:\Users\COMPAX\Desktop\registroproductos\registroproductos\obj\Debug\registroproductos.pdb
+C:\Users\COMPAX\Desktop\registroproductos\registroproductos\obj\Debug\registroproductos.frmInicio.resources
+C:\Users\COMPAX\Desktop\registroproductos\registroproductos\obj\Debug\registroproductos.views.frmApartados.resources
+C:\Users\COMPAX\Desktop\registroproductos\registroproductos\obj\Debug\registroproductos.views.frmDetalleApartado.resources

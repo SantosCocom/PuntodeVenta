@@ -7,9 +7,19 @@ C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\ob
 C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.pdb
 C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.Properties.Resources.resources
 C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\Santos\Documents\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.csprojResolveAssemblyReference.cache
 C:\Users\Santos\Documents\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.MainForm.resources
 C:\Users\Santos\Documents\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.Properties.Resources.resources
 C:\Users\Santos\Documents\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.csproj.GenerateResource.Cache
 C:\Users\Santos\Documents\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.exe
 C:\Users\Santos\Documents\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.pdb
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.csprojResolveAssemblyReference.cache
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.MainForm.resources
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.Properties.Resources.resources
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.csproj.GenerateResource.Cache
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.exe
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.pdb
+=======
+C:\Users\Santos\Documents\SharpDevelop Projects\NovedadesLirio\NovedadesLirio\obj\Debug\NovedadesLirio.FormDetalleVentas.resources
+>>>>>>> da2cae4036eadacddc90bd66d5b1ee61a0019df7

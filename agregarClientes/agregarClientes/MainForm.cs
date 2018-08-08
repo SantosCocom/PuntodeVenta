@@ -30,21 +30,12 @@ namespace agregarClientes
 			InitializeComponent();
 			txtBuscar.Focus();
 			
-			grbDatos.Visible=false;
+			grbDatos.Enabled=false;
 			btnGuardar.Visible=false;
 			btnGuardarEdi.Visible=false;
 			btnCancelar.Visible=false;
 			btnEliminar.Visible=false;
 			
-			
-			txtNombre.ReadOnly=true;
-			txtApellidoP.ReadOnly=true;
-			txtApellidoM.ReadOnly=true;
-			txtCurp.ReadOnly=true;
-			txtTelefono.ReadOnly=true;
-			txtDireccion.ReadOnly=true;
-			txtLocalidad.ReadOnly=true;
-			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
@@ -59,18 +50,10 @@ namespace agregarClientes
 		
 		void BtnAñadirClick(object sender, EventArgs e)
 		{
-			grbDatos.Visible=true;
+			grbDatos.Enabled=true;
 			btnAñadir.Visible=false;
 			btnEditar.Visible=false;
 			btnEliminar.Visible=false;
-
-			txtNombre.ReadOnly=false;
-			txtApellidoP.ReadOnly=false;
-			txtApellidoM.ReadOnly=false;
-			txtCurp.ReadOnly=false;
-			txtTelefono.ReadOnly=false;
-			txtDireccion.ReadOnly=false;
-			txtLocalidad.ReadOnly=false;
 			
 			btnCancelar.Visible=true;
 			btnGuardar.Visible=true;
@@ -107,19 +90,11 @@ namespace agregarClientes
 			
 			btnGuardar.Visible=false;
 			
-			txtNombre.ReadOnly=true;
-			txtApellidoP.ReadOnly=true;
-			txtApellidoM.ReadOnly=true;
-			txtCurp.ReadOnly=true;
-			txtTelefono.ReadOnly=true;
-			txtDireccion.ReadOnly=true;
-			txtLocalidad.ReadOnly=true;
-			
 			btnAñadir.Visible=true;
 			btnEditar.Visible=true;
 			btnEliminar.Visible=false;
 			btnCancelar.Visible=false;
-			grbDatos.Visible=false;
+			grbDatos.Enabled=false;
 			
 			txtBuscar.Focus();
 			}else
@@ -129,18 +104,12 @@ namespace agregarClientes
 		}
 		void BtnEditarClick(object sender, EventArgs e)
 		{
-			grbDatos.Visible=true;
+			grbDatos.Enabled=true;
 			btnAñadir.Visible=false;
 			btnEditar.Visible=false;
 			btnEliminar.Visible=false;
 			
-			txtNombre.ReadOnly=false;
-			txtApellidoP.ReadOnly=false;
-			txtApellidoM.ReadOnly=false;
-			txtCurp.ReadOnly=false;
-			txtTelefono.ReadOnly=false;
-			txtDireccion.ReadOnly=false;
-			txtLocalidad.ReadOnly=false;
+			txtCurp.Enabled=false;
 			
 			txtCurp.Text = dgvClientes[0, dgvClientes.CurrentCellAddress.Y].Value.ToString();
 			txtNombre.Text = dgvClientes[1, dgvClientes.CurrentCellAddress.Y].Value.ToString();
@@ -173,19 +142,12 @@ namespace agregarClientes
 			txtLocalidad.Clear();
 			btnGuardarEdi.Visible=false;
 			
-			txtNombre.ReadOnly=true;
-			txtApellidoP.ReadOnly=true;
-			txtApellidoM.ReadOnly=true;
-			txtCurp.ReadOnly=true;
-			txtTelefono.ReadOnly=true;
-			txtDireccion.ReadOnly=true;
-			txtLocalidad.ReadOnly=true;
 			
 			btnAñadir.Visible=true;
 			btnEditar.Visible=true;
 			btnEliminar.Visible=false;
 			btnCancelar.Visible=false;
-			grbDatos.Visible=false;
+			grbDatos.Enabled=false;
 			
 			txtBuscar.Focus();
 			}else
@@ -220,19 +182,11 @@ namespace agregarClientes
 			btnGuardar.Visible=false;
 			btnGuardarEdi.Visible=false;
 			
-			txtNombre.ReadOnly=true;
-			txtApellidoP.ReadOnly=true;
-			txtApellidoM.ReadOnly=true;
-			txtCurp.ReadOnly=true;
-			txtTelefono.ReadOnly=true;
-			txtDireccion.ReadOnly=true;
-			txtLocalidad.ReadOnly=true;
-			
 			btnAñadir.Visible=true;
 			btnEditar.Visible=true;
 			btnEliminar.Visible=false;
 			btnCancelar.Visible=false;
-			grbDatos.Visible=false;
+			grbDatos.Enabled=false;
 			txtBuscar.Focus();
 			}
 		}

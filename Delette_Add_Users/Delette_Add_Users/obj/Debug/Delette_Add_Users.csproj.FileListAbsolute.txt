@@ -16,3 +16,12 @@ C:\Users\Abraham\Documents\GitHub\PuntodeVenta\Delette_Add_Users\Delette_Add_Use
 C:\Users\Abraham\Documents\GitHub\PuntodeVenta\Delette_Add_Users\Delette_Add_Users\obj\Debug\Delette_Add_Users.csproj.GenerateResource.Cache
 C:\Users\Abraham\Documents\GitHub\PuntodeVenta\Delette_Add_Users\Delette_Add_Users\obj\Debug\Delette_Add_Users.exe
 C:\Users\Abraham\Documents\GitHub\PuntodeVenta\Delette_Add_Users\Delette_Add_Users\obj\Debug\Delette_Add_Users.pdb
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\Delette_Add_Users\Delette_Add_Users\bin\Debug\Delette_Add_Users.exe.config
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\Delette_Add_Users\Delette_Add_Users\bin\Debug\Delette_Add_Users.exe
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\Delette_Add_Users\Delette_Add_Users\bin\Debug\Delette_Add_Users.pdb
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\Delette_Add_Users\Delette_Add_Users\obj\Debug\Delette_Add_Users.csprojResolveAssemblyReference.cache
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\Delette_Add_Users\Delette_Add_Users\obj\Debug\Delette_Add_Users.FormLogin.resources
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\Delette_Add_Users\Delette_Add_Users\obj\Debug\Delette_Add_Users.FormUsuarios.resources
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\Delette_Add_Users\Delette_Add_Users\obj\Debug\Delette_Add_Users.csproj.GenerateResource.Cache
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\Delette_Add_Users\Delette_Add_Users\obj\Debug\Delette_Add_Users.exe
+C:\Users\COMPAX\Documents\GitHub\PuntodeVenta\Delette_Add_Users\Delette_Add_Users\obj\Debug\Delette_Add_Users.pdb

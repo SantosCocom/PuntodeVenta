@@ -1,0 +1,75 @@
+C:\Users\MIKE\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.exe.config
+C:\Users\MIKE\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.exe
+C:\Users\MIKE\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.pdb
+C:\Users\MIKE\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.csprojResolveAssemblyReference.cache
+C:\Users\MIKE\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.MainForm.resources
+C:\Users\MIKE\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.csproj.GenerateResource.Cache
+C:\Users\MIKE\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.exe
+C:\Users\MIKE\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.pdb
+C:\Users\MIKE\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.frmPrueba.resources
+N:\Proyectos c++\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.exe.config
+N:\Proyectos c++\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.exe
+N:\Proyectos c++\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.pdb
+N:\Proyectos c++\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.csprojResolveAssemblyReference.cache
+N:\Proyectos c++\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.MainForm.resources
+N:\Proyectos c++\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.csproj.GenerateResource.Cache
+N:\Proyectos c++\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.exe
+N:\Proyectos c++\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.pdb
+C:\Users\Santos\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.exe.config
+C:\Users\Santos\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.exe
+C:\Users\Santos\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.pdb
+C:\Users\Santos\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.csprojResolveAssemblyReference.cache
+C:\Users\Santos\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.MainForm.resources
+C:\Users\Santos\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.csproj.GenerateResource.Cache
+C:\Users\Santos\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.exe
+C:\Users\Santos\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.pdb
+C:\Users\Santos\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormVentas.resources
+C:\Users\Santos\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormDetalleVentas.resources
+C:\Users\Santos\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormLogin.resources
+C:\Users\Santos\Documents\SharpDevelop Projects\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormEmpleado.resources
+C:\Users\Abraham\Documents\MenuPrincipal\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.exe.config
+C:\Users\Abraham\Documents\MenuPrincipal\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.exe
+C:\Users\Abraham\Documents\MenuPrincipal\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.pdb
+C:\Users\Abraham\Documents\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.csprojResolveAssemblyReference.cache
+C:\Users\Abraham\Documents\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormVentas.resources
+C:\Users\Abraham\Documents\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormDetalleVentas.resources
+C:\Users\Abraham\Documents\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormEmpleado.resources
+C:\Users\Abraham\Documents\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormLogin.resources
+C:\Users\Abraham\Documents\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.MainForm.resources
+C:\Users\Abraham\Documents\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.csproj.GenerateResource.Cache
+C:\Users\Abraham\Documents\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.exe
+C:\Users\Abraham\Documents\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.pdb
+C:\Users\Abraham\Documents\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\Delette_Add_Users.FormEmpleados.resources
+H:\MenuPrincipal\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.exe.config
+H:\MenuPrincipal\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.exe
+H:\MenuPrincipal\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.pdb
+H:\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.csprojResolveAssemblyReference.cache
+H:\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormVentas.resources
+H:\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormDetalleVentas.resources
+H:\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormEmpleado.resources
+H:\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\Delette_Add_Users.FormEmpleados.resources
+H:\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormLogin.resources
+H:\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.MainForm.resources
+H:\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.csproj.GenerateResource.Cache
+H:\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.exe
+H:\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.pdb
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.exe.config
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.exe
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\bin\Debug\MenuPrincipal.pdb
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormVentas.resources
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormDetalleVentas.resources
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormEmpleado.resources
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormLogin.resources
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.MainForm.resources
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.csproj.GenerateResource.Cache
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.exe
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.pdb
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\bin\Debug\MySql.Data.dll
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\bin\Debug\MySql.Data.xml
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.csprojAssemblyReference.cache
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.csproj.ResolveComReference.cache
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.csproj.CoreCompileInputs.cache
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.csproj.CopyComplete
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormClientes.resources
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.FormProductos.resources
+G:\DAI\MenuPrincipal\MenuPrincipal\MenuPrincipal\obj\Debug\MenuPrincipal.Properties.Resources.resources
